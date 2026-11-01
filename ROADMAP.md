@@ -10,8 +10,11 @@ Planlanan işler tamamlanmış uygulama işlevleri gibi sunulmaz.
 - [x] Seçili tarihten ileriye dönük **12 aylık PDF listesi**; kontrol/hatırlatmalar seçimlik.
 - [x] Takvim yılı CSV/ICS, yazdırma, 201-yıl regresyon testleri.
 - [x] Donanımı teyit edilmemiş özel talimlerin ayrı durum etiketi.
-- [ ] GitHub Pages'in depo sahibi tarafından etkinleştirilmesi ve Firefox/Safari ile ayrı tarayıcı testleri.
+- [x] GitHub Pages `main` dalından etkin; depo sahibi canlı uygulamayı tarayıcıda doğruladı.
+- [ ] Firefox/Safari ile ayrı tarayıcı testleri.
+- [x] Gemi profili şablonu, katalog, yeni gemi taslak oluşturma aracı ve veri doğrulama testi oluşturuldu.
 - [ ] Tek kaynak JSON'dan offline `index.html` derleme hattı ve profil/donanım senkronizasyon testi.
+- [ ] Yeni geminin katalogdan kullanıcı arayüzünde otomatik seçilmesi; bugün henüz desteklenmiyor.
 - [ ] Gerçek NENE HATUN can filikası, kurtarma/hizmet botu, acil dümen envanteri için belge bazlı doğrulama ve gemi sorumlu teyidi.
 
 ## Aşama 2 — Kaynaklı talim prosedürleri
