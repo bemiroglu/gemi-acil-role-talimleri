@@ -1,5 +1,13 @@
 # Değişiklik Kaydı / Changelog
 
+## 1.4.1 — 2026-11-01
+- GitHub Pages'te çalışacak ana sayfa bağlantısı README içinde tanımlandı; GitHub Pages'i açma adımları açıklandı.
+- Uygulama araç çubuğuna **HTML indir / Download HTML** bağlantısı eklendi; aynı kökendeki `index.html` dosyasının indirilmesi amaçlandı.
+- Özgün yazılım ve dokümantasyon için **MIT License** kabul edildi ve `LICENSE` dosyası eklendi; © 2026 Bilal Emiroğlu.
+- HTML üst bilgisinde SPDX MIT ve telif bildirimi; alt bilgi satırında © 2026 · MIT göstergesi.
+- GitHub Pages için `.nojekyll` boş dosyası eklendi.
+- Planlama politikası v1.2 ve gemi bazlı faaliyet hesapları değiştirilmedi.
+
 ## 1.4.0 — 2026-11-01
 - **Yazdır / PDF** işlevi ana ekranı basmak yerine, seçili tarihten başlayarak **ileri dönük 12 aylık** A4 dikey liste üretir; önizleme açılır ve tarayıcı PDF olarak kaydeder.
 - Periyodik kontroller/hatırlatmalar raporda isteğe bağlıdır; varsayılan liste yalnızca talimleri içerir.
