@@ -35,3 +35,12 @@ Donanım kaydı `null` → `true/false` olarak ancak kaynak, kaynak tarihi, gemi
 - Kullanıcı arayüzü ile yazdırılan liste aynı veri modelinden üretilir.
 
 Bu dosya proje mimarisi kararıdır; KEGM tarafından onaylanmış kurumsal yazılım mimarisi değildir.
+
+## Gemi ekleme veri altyapısı — 1 Kasım 2026
+
+- `data/vessels/catalog.json` yayımlanabilir gemi profili kayıtlarını tutar; `in_app` alanı **gerçekte HTML'de seçilebilir** olma durumunu belirtir.
+- `data/vessels/_template.json` ve `scripts/new-vessel.cjs` ile yeni gemi profili **bütün donanımları `null`** başlatılarak oluşturulur; yeni gemi uygulamaya otomatik eklenmez.
+- `tests/test-vessel-profiles.cjs` katalog/şema uyumu ile doğrulanmış donanım için kanıt referansı gerekliliğini denetler.
+- Gemiye özgü kaynak belge **aslı** yetkili kurum kayıt sisteminde kalır; kamuya açık GitHub deposuna sadece yayımlanması onaylı teknik profil ve kaynak üst verisi girilir.
+- Belge teslimi, tasnifi ve yeni gemi ekleme adımları için [VESSEL_ONBOARDING.md](VESSEL_ONBOARDING.md).
+- Kaynak profilden çalışan offline HTML üretimi ve çoklu gemi seçicisinin otomatik güncellenmesi henüz geliştirilmemiştir. Bu durum açıkça korunmalıdır.
