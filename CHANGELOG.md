@@ -1,5 +1,19 @@
 # Değişiklik Kaydı / Changelog
 
+## 1.5.0 — 2026-11-02
+
+- Seçilen talimin kartına **Talim Eğitimi** ve **Örnek & EK-V Taslağı** düğmeleri eklendi.
+- Tek HTML içerisinde iki tam ekran görünümü: amacı, kaynak/kapsam uyarısı, sıralı emniyetli eğitim aşamaları ve risk başlıkları; geçmiş zamanlı, doldurulmuş gibi yazılmış ama açıkça **örnek** etiketli anlatım.
+- Yangın **8**, Gemiyi Terk **12** kontrol konusuyla, diğer talimler genel pilot kontrol listeleriyle açılır.
+- Gerçekleşen tarih, sorumlu zabit, katılım, yer, senaryo ve sonuç bilgileri girilerek **resmî olmayan EK-V aktarım taslağı** hazırlanır.
+- **Fiilen yapıldı / Simüle edildi / Anlatıldı / Yapılmadı / Uygulanamaz / Henüz değerlendirilmedi** durumları ayrı tutulur. Eksik kontrol, gerekçesiz yapılmayan işlem veya açık risk tedbiri varsa kayıt tamamlanmış gösterilmez.
+- Çıktılar: TXT, kopyalama, yazdır/PDF ve yalnızca yerel JSON taslak indir/yükle.
+- Tarihsel doldurulmuş kurum formları, kişisel bilgiler ve özgün risk PDF/Excel dosyaları **HTML içine konulmadı**; eğitim içeriği genelleştirilmiş, yeni oluşturulmuş metindir.
+- Kanonik takvim politikası **1.2 değişmedi**; 201 yıllık regresyon, 8/12 kontrol, risk/eksiklik durumları, TR/EN ve mobil görünüm Chromium üzerinde test edildi.
+- GitHub Actions'a `tests/test-training.cjs` eklendi; eski sürüme sabit indirme kontrolü sürümden bağımsız hâle getirildi.
+- Kullanım kılavuzu: `docs/TRAINING_RECORDS.md`.
+
+
 ## Depo ve belge yönetimi güncellemesi — 2026-11-01
 - GitHub Pages uygulamasının `main` dalında çalıştığı proje sahibi tarafından doğrulandı; README'deki Pages ayar bağlantısı ve geçici yayımlama talimatları kaldırıldı.
 - GitHub Pages'in GitHub Free kapsamında, 30 günlük deneme kısıtı olmadan sunulduğu resmi doküman üzerinden doğrulandı.
