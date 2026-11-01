@@ -2,9 +2,9 @@
 
 **Uygulama v1.4.1** · **Kanonik planlama politikası v1.2** · Türkçe / English · HTML5 · Çevrimdışı
 
-**[Uygulamayı tarayıcıda aç — GitHub Pages](https://bemiroglu.github.io/gemi-acil-role-talimleri/)** · **[Kaynak kodunu incele](./index.html)** · **[Pages ayarlarını aç](https://github.com/bemiroglu/gemi-acil-role-talimleri/settings/pages)**
+**[Uygulamayı aç — Gemi Acil Role Talimleri](https://bemiroglu.github.io/gemi-acil-role-talimleri/)** · **[Kaynak kodu](./index.html)** · **[Gemi profili ekleme rehberi](docs/VESSEL_ONBOARDING.md)**
 
-> **Canlı bağlantı:** GitHub Pages, depo sahibi tarafından etkinleştirildikten ve yayımlama tamamlandıktan sonra çalışır. Yayın durumu bu belge hazırlanırken bağımsız olarak doğrulanamamıştır. Site açıldığında, üst bölümdeki **HTML indir / Download HTML** bağlantısı çevrimdışı dosyayı indirme isteği gönderir; tarayıcı/kurum güvenlik kısıtlamaları bu indirmeyi yine de engelleyebilir.
+> **Yayın durumu:** Proje sahibi, uygulamanın GitHub Pages adresinde açıldığını ve `main` dalından yayımlandığını doğrulamıştır. Uygulama tarayıcıda doğrudan kullanılabilir; çevrimdışı HTML dosyası indirmek isteğe bağlıdır. Kurumsal bilgisayarlarda indirmeler güvenlik politikaları gereği engellenebilir.
 
 Gemi acil durum role talimlerini planlamaya, seçilen haftanın pazar gününü incelemeye ve **ileri dönük 12 aylık listeyi PDF olarak yazdırmaya** yönelik, kurulum ve dış kütüphane gerektirmeyen tek dosya uygulamasıdır. Takvim, kurum içi EK-VI Rev.015 çizelgesi esas alınarak geliştirilen **proje içi planlama politikası v1.2** üzerinden hesaplanır.
 
@@ -49,21 +49,26 @@ Test paketi, 1900–2100 arasındaki 201 yılın temel talim aralıklarını ve 
 
 Çıktılar **planlanmış** durumdadır. Operasyonel erteleme, gerçekleşen talim kayıtları, gemi role cetveli ve personel bilgileri v1.4.1 kapsamında tutulmaz.
 
-## GitHub Pages
+## GitHub Pages — aktif yayın
 
-1. Depo sahibi [Settings → Pages](https://github.com/bemiroglu/gemi-acil-role-talimleri/settings/pages) sayfasını açar.
-2. **Build and deployment → Source: Deploy from a branch** seçilir.
-3. **Branch: main** ve **Folder: /(root)** seçilip **Save** tıklanır.
-4. GitHub Pages yayımlaması başarılı olduğunda [https://bemiroglu.github.io/gemi-acil-role-talimleri/](https://bemiroglu.github.io/gemi-acil-role-talimleri/) uygulamayı doğrudan tarayıcıda açar. 
-5. Uygulamanın üst kısmındaki **HTML indir** bağlantısıyla aynı sunucudaki kaynak HTML, tarayıcıya indirilmek üzere sunulur.
+**[https://bemiroglu.github.io/gemi-acil-role-talimleri/](https://bemiroglu.github.io/gemi-acil-role-talimleri/)**
 
-**Teknik açıklama:** GitHub’ın `blob/main/index.html` bağlantısı bir **kaynak kodu görüntüleyicisidir**. `raw.githubusercontent.com` bağlantısı da kaynak içerik teslimidir; bir web uygulamasının çalışacağı HTML sayfası bağlantısı yerine kullanılmamalıdır. Canlı uygulama bağlantısı GitHub Pages üzerinden sağlanır.
+Depo sahibi sitenin `main` dalından yayımlandığını ve tarayıcıda çalıştığını doğrulamıştır. Mevcut `main / (root)` ayarını değiştirmek, özel alan adı eklemek, Jekyll teması seçmek veya ücretli plana geçmek gerekmez. GitHub Free'nin herkese açık depolarındaki Pages hizmeti 30 günlük deneme değildir; normal hizmet şartlarına ve kaynak sınırlarına tabidir.
+
+Uygulama **HTML indir** seçeneğini içerir; ancak korumalı bilgisayarlarda doğrudan web sayfasından kullanım, HTML dosyasını indirmekten daha uygulanabilir olabilir.
+
+**Kaynak:** GitHub. (t.y.). *What is GitHub Pages?* https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+
+## Gemi ekleme ve veri düzeni
+
+Gemiye özgü bilgileri **doğrudan HTML içine tek tek yazmak yerine** sürümlü JSON profillerinde hazırlıyoruz. [Gemi profili ekleme ve belge saklama rehberi](docs/VESSEL_ONBOARDING.md) yeni geminin veri yapısını, belge doğrulamasını ve yayımlama sınırlarını açıklar. [Gemi profil kataloğu](data/vessels/catalog.json) yayımlanan profil kimliklerini listeler. **Önemli:** Yeni JSON dosyası oluşturmak, mevcut v1.4.1 HTML arayüzüne otomatik gemi eklemez; uygulamaya entegrasyon ve yeniden test ayrı bir adım gerektirir.
 
 ## Geliştirme
 
 - [Değişiklik geçmişi](CHANGELOG.md)
 - [Yol haritası](ROADMAP.md)
 - [Gemi bazlı mimari ve koşullu talimler](docs/ARCHITECTURE.md)
+- [Yeni gemi ekleme ve belge yönetimi](docs/VESSEL_ONBOARDING.md)
 
 **Geliştirici:** Bilal Emiroğlu - TA1BU
 
