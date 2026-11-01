@@ -65,7 +65,7 @@ const both = test.plan(2026, {steering:true,rescue:true,lifeboat:true});
 assert(both.all.some(e => e.key === 'LIFEBOAT'));
 assert(both.all.some(e => e.key === 'RESCUE_BOAT'));
 assert.equal(test.sundayOfWeek('2026-12-31'), '2027-01-03');
-assert(html.includes('id="downloadHtml"') && html.includes('download="Gemi_Acil_Role_Talimleri_v1.4.1.html"'));
+assert(html.includes('id="downloadHtml"') && /download="Gemi_Acil_Role_Talimleri_v1\.\d+\.\d+\.html"/.test(html));
 assert(html.includes('SPDX-License-Identifier: MIT'));
 assert.equal(test.state.vessel, 'nene-hatun');
 assert.equal(test.activeGear().lifeboat, true);
