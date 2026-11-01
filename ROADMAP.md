@@ -1,30 +1,33 @@
 # Geliştirme Yol Haritası / Roadmap
 
-Bu dosya **planlanan** işleri tanımlar, tamamlanmış ürün yetenekleri olarak değerlendirilmemelidir.
+Planlanan işler tamamlanmış uygulama işlevleri gibi sunulmaz.
 
-## 1. Takvim ve kullanıcı deneyimi
-- [x] Türkçe/İngilizce, tek dosya, çevrimdışı HTML.
-- [x] Açıklayıcı talim adları; senaryo kodları ayrıntılarda.
-- [x] 1900–2100 tarihi, aylık/yıllık plan, donanım seçenekleri.
-- [x] CSV/ICS, yazdırma, örtük algoritma testleri.
-- [ ] Depo sahibi tarafından GitHub Pages'in etkinleştirilmesi ve çoklu tarayıcı doğrulaması.
+## Aşama 1 — Takvim ve sade arayüz (v1.4.0)
+- [x] Kurum genel şablonu ve NENE HATUN pilot profili.
+- [x] Tek HTML5, offline, iki dil, ay/yıl ve haftalık pazar talimleri.
+- [x] Senaryo kodu yerine açıklayıcı talim adı.
+- [x] Yıllık KPI, kaynak/kapsam ve ay özeti katlanabilir.
+- [x] Seçili tarihten ileriye dönük **12 aylık PDF listesi**; kontrol/hatırlatmalar seçimlik.
+- [x] Takvim yılı CSV/ICS, yazdırma, 201-yıl regresyon testleri.
+- [x] Donanımı teyit edilmemiş özel talimlerin ayrı durum etiketi.
+- [ ] GitHub Pages'in depo sahibi tarafından etkinleştirilmesi ve Firefox/Safari ile ayrı tarayıcı testleri.
+- [ ] Tek kaynak JSON'dan offline `index.html` derleme hattı ve profil/donanım senkronizasyon testi.
+- [ ] Gerçek NENE HATUN can filikası, kurtarma/hizmet botu, acil dümen envanteri için belge bazlı doğrulama ve gemi sorumlu teyidi.
 
-## 2. Kaynaklı talim prosedür ekranları
-- [ ] Talim bazlı eğitici prosedür sayfası veya aynı HTML içinde ayrıntı görünümü.
-- [ ] SOLAS/ulusal mevzuat, kurum SMS/ISM prosedürü, iyi uygulama ayrımı.
-- [ ] Gemiye uygulanabilirlik şartları; belge sürümü ve madde bazında kaynak.
-- [ ] Hazırlık, tatbikat safhaları, emniyet/durdurma kriterleri ve kontrol listeleri.
-- [ ] Yayın izni bulunmayan kurum dokümanlarının depoda paylaşılmaması.
+## Aşama 2 — Kaynaklı talim prosedürleri
+- [ ] Gemi profiline göre açılan eğitici prosedür ekranı.
+- [ ] Mevzuat maddesi, kurum SMS/ISM prosedür revizyonu ve iyi uygulamanın ayrı gösterimi.
+- [ ] Emniyet/durdurma kriterleri, hazırlık, icra, değerlendirme ve ilgili form.
+- [ ] Gemi görevine özgü yeni senaryolar için ayrı veri katmanı (yasal/kural dayanağı kontrol edilerek).
 
-## 3. ISM kayıt taslakları
-- [ ] Talim türü ve planlanan tarihin otomatik eklenmesi.
-- [ ] Gerçekleşen işlemlerin, katılımın ve bulguların kullanıcı tarafından doğrulanması.
-- [ ] Planı tamamlanmış talim kaydı gibi göstermeme.
+## Aşama 3 — Kayıt taslakları
+- [ ] Plan bilgileriyle ISM talim formunun **taslağını** doldurmak.
+- [ ] Gerçekleşen faaliyet, süre, katılım, bulgu, düzeltici faaliyetler için insan doğrulaması.
+- [ ] Planlanan/gerçekleşen tarihlerin ve ertelemelerin izlenmesi.
 
-## 4. Gemi ve personel özelleştirmesi
-- [ ] Gemi tipi, sefer, donanım ve role cetveli eşleştirme.
-- [ ] Personel/posta görevleri ve katılım takibi.
-- [ ] Gerçekleşen/ertelenen talim tarihleri ve uygulanabilir mevzuat kontrolü.
-- [ ] Kişisel ve kurumsal veriler için yerel işleme/gizlilik önlemleri.
+## Aşama 4 — Role cetveli ve personel
+- [ ] Gemi bazlı role cetveli, görevlendirmeler ve posta bazlı kontrol yükümlülükleri.
+- [ ] Kişisel/kurumsal bilgilerin yerel ve yetkili ortamda işlenmesi.
+- [ ] Gemiler arası profil çoğaltılması yerine tek motorun sürümlenebilir profillerle işletilmesi.
 
-**Değişiklik yönetimi:** Kanonik planlama politikası değişiklikleri ayrıca onaylanıp sürümlendirilmeli ve regresyon testleriyle doğrulanmalıdır.
+**Mimari:** [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). **Politika:** v1.2 değişikliği, kullanıcı tarafından ayrı onay gerektirir.
