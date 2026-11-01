@@ -1,4 +1,4 @@
-name: Calendar regression
+name: Calendar and vessel regression
 on:
   push:
   pull_request:
@@ -16,3 +16,7 @@ jobs:
         run: node tests/test-calendar.cjs
       - name: Validate vessel profiles and catalog
         run: node tests/test-vessel-profiles.cjs
+      - name: Smoke test new vessel onboarding
+        run: |
+          node scripts/new-vessel.cjs "CI DENEME GEMISI"
+          node tests/test-vessel-profiles.cjs
