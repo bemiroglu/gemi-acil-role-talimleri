@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "id": "new-vessel",
+  "display_name": "GEMİ ADI",
+  "role": "vessel-profile",
+  "verification_status": "not_verified",
+  "public_attributes": {},
+  "drill_relevant_equipment": {
+    "emergency_steering": {
+      "available": null,
+      "verification": "not_verified",
+      "source_refs": [],
+      "note": "Güncel, yetkili gemi envanteriyle doğrulanmadı."
+    },
+    "rescue_or_service_boat": {
+      "available": null,
+      "verification": "not_verified",
+      "source_refs": [],
+      "note": "Güncel, yetkili gemi envanteriyle doğrulanmadı."
+    },
+    "lifeboat": {
+      "available": null,
+      "verification": "not_verified",
+      "source_refs": [],
+      "note": "Güncel, yetkili gemi envanteriyle doğrulanmadı."
+    }
+  },
+  "sources": [],
+  "runtime_note": "Profil taslağıdır. Güncel HTML uygulamasına otomatik yüklenmez. Kaynak doğrulaması ve uygulama entegrasyonu gerekir.",
+  "plan_policy_version": "1.2",
+  "app_version": "1.4.1"
+}
