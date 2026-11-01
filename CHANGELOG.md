@@ -1,5 +1,13 @@
 # Değişiklik Kaydı / Changelog
 
+## Depo ve belge yönetimi güncellemesi — 2026-11-01
+- GitHub Pages uygulamasının `main` dalında çalıştığı proje sahibi tarafından doğrulandı; README'deki Pages ayar bağlantısı ve geçici yayımlama talimatları kaldırıldı.
+- GitHub Pages'in GitHub Free kapsamında, 30 günlük deneme kısıtı olmadan sunulduğu resmi doküman üzerinden doğrulandı.
+- Yeni gemi taslak şablonu (`_template.json`), gemi kataloğu (`catalog.json`), otomatik taslak hazırlayıcı (`scripts/new-vessel.cjs`) ve profil tutarlılık testi oluşturuldu.
+- `docs/VESSEL_ONBOARDING.md` ile kurum belgelerinin saklanması, yayımlanabilir verinin seçimi, revizyon ve kaynak doğrulaması belgelendi.
+- Yeni profil oluşturma aracının mevcut HTML'nin gemi seçicisine **otomatik gemi eklemediği** açıkça belirtildi.
+- Bu çalışma yalnızca depo belgeleri ve geliştirme araçlarını etkiler: `index.html` ve kanonik politika v1.2 değiştirilmedi.
+
 ## 1.4.1 — 2026-11-01
 - GitHub Pages'te çalışacak ana sayfa bağlantısı README içinde tanımlandı; GitHub Pages'i açma adımları açıklandı.
 - Uygulama araç çubuğuna **HTML indir / Download HTML** bağlantısı eklendi; aynı kökendeki `index.html` dosyasının indirilmesi amaçlandı.
