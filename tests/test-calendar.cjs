@@ -10,7 +10,7 @@ assert(found, 'Standalone application script missing.');
 const registry = new Map();
 function element(id) {
   if (!registry.has(id)) registry.set(id, {
-    textContent: '', innerHTML: '', value: '', checked: false,
+    textContent: '', innerHTML: '', value: '', checked: false, options:[{textContent:''},{textContent:''}],
     classList: { toggle() {}, add() {}, remove() {} },
     setAttribute() {}, addEventListener() {}
   });
@@ -65,6 +65,17 @@ const both = test.plan(2026, {steering:true,rescue:true,lifeboat:true});
 assert(both.all.some(e => e.key === 'LIFEBOAT'));
 assert(both.all.some(e => e.key === 'RESCUE_BOAT'));
 assert.equal(test.sundayOfWeek('2026-12-31'), '2027-01-03');
+assert.equal(test.state.vessel, 'nene-hatun');
+assert.equal(test.activeGear().lifeboat, true);
+assert.equal(test.isConditional({key:'LIFEBOAT'}), true);
+assert.equal(test.isConditional({key:'FIRE'}), false);
+assert.equal(test.anniversary('2028-02-29'), '2029-03-01');
+const r12 = test.rolling('2026-11-01', false);
+assert.equal(r12.end, '2027-10-31');
+assert(r12.items.every(e => e.date >= '2026-11-01' && e.date < '2027-11-01' && e.kind !== 'check'));
+assert(test.rolling('2026-11-01', true).items.length > r12.items.length);
+assert(html.includes('id="printReport"'));
+
 assert.equal(test.tests().filter(t => !t.skip && !t.pass).length, 0);
 assert.equal(years, 201);
 console.log('PASS: '+years+' years; scenario balance, drill frequency, equipment, year boundary and HTML checks.');
