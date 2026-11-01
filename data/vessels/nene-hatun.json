@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "nene-hatun",
+  "display_name": "NENE HATUN",
+  "role": "pilot-vessel-profile",
+  "verification_status": "partial-public-information",
+  "public_attributes": {
+    "vessel_category": "Acil Durum Müdahale Gemisi",
+    "fire_fighting_notation": "Fi-Fi 3",
+    "dynamic_positioning": "DP 2",
+    "length_m": 88,
+    "gross_tonnage": 4291
+  },
+  "drill_relevant_equipment": {
+    "emergency_steering": {
+      "available": null,
+      "verification": "not_verified",
+      "note": "Güncel gemi envanteri veya uygun resmî belgeyle doğrulanmalıdır."
+    },
+    "rescue_or_service_boat": {
+      "available": null,
+      "verification": "not_verified",
+      "note": "Güncel gemi envanteri veya uygun resmî belgeyle doğrulanmalıdır."
+    },
+    "lifeboat": {
+      "available": null,
+      "verification": "not_verified",
+      "note": "Güncel gemi envanteri veya uygun resmî belgeyle doğrulanmalıdır."
+    }
+  },
+  "sources": [
+    {
+      "organization": "Kıyı Emniyeti Genel Müdürlüğü",
+      "title": "Dünya Denizlerinde Risk Nöbeti",
+      "uri": "https://kiyiemniyeti.gov.tr/haber/192/%E2%80%9CDUNYA-DENIZLERINDE-RISK-NOBETI%E2%80%9D",
+      "note": "Kamuya açık tanıtım; güncel donanım envanteri/role cetveli yerine geçmez."
+    }
+  ],
+  "runtime_note": "v1.4.0 çevrimdışı tek dosyalı index.html, eşdeğer gömülü pilot profil kullanır. Bu JSON henüz istemci tarafından dinamik yüklenmez.",
+  "plan_policy_version": "1.2",
+  "app_version": "1.4.0"
+}
