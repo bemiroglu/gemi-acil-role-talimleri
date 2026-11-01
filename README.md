@@ -1,8 +1,10 @@
 # Gemi Acil Role Talimleri · Vessel Emergency Drill Planner
 
-**Uygulama v1.4.0** · **Kanonik planlama politikası v1.2** · Türkçe / English · HTML5 · Çevrimdışı
+**Uygulama v1.4.1** · **Kanonik planlama politikası v1.2** · Türkçe / English · HTML5 · Çevrimdışı
 
-**[Uygulamayı aç / kaynağı görüntüle](./index.html)** · **[HTML dosyasını indir](https://raw.githubusercontent.com/bemiroglu/gemi-acil-role-talimleri/main/index.html)**
+**[Uygulamayı tarayıcıda aç — GitHub Pages](https://bemiroglu.github.io/gemi-acil-role-talimleri/)** · **[Kaynak kodunu incele](./index.html)** · **[Pages ayarlarını aç](https://github.com/bemiroglu/gemi-acil-role-talimleri/settings/pages)**
+
+> **Canlı bağlantı:** GitHub Pages, depo sahibi tarafından etkinleştirildikten ve yayımlama tamamlandıktan sonra çalışır. Yayın durumu bu belge hazırlanırken bağımsız olarak doğrulanamamıştır. Site açıldığında, üst bölümdeki **HTML indir / Download HTML** bağlantısı çevrimdışı dosyayı indirme isteği gönderir; tarayıcı/kurum güvenlik kısıtlamaları bu indirmeyi yine de engelleyebilir.
 
 Gemi acil durum role talimlerini planlamaya, seçilen haftanın pazar gününü incelemeye ve **ileri dönük 12 aylık listeyi PDF olarak yazdırmaya** yönelik, kurulum ve dış kütüphane gerektirmeyen tek dosya uygulamasıdır. Takvim, kurum içi EK-VI Rev.015 çizelgesi esas alınarak geliştirilen **proje içi planlama politikası v1.2** üzerinden hesaplanır.
 
@@ -10,7 +12,7 @@ Gemi acil durum role talimlerini planlamaya, seçilen haftanın pazar gününü 
 
 ## Hızlı kullanım
 
-1. `index.html` dosyasını indirin ve güncel tarayıcıyla açın. İnternet/sunucu gerekmez.
+1. GitHub Pages bağlantısını açın; sitenin **HTML indir** seçeneğiyle dosyanızı bilgisayarınıza alıp çevrimdışı da çalıştırabilirsiniz. Kaydedilmiş HTML için internet/sunucu gerekmez.
 2. **Gemi profili** seçin: **NENE HATUN (pilot)** veya **Kurum genel planı**.
 3. Tarih seçin: seçilen tarihin haftasındaki **pazar günü** ve ait olduğu **ayın** talimleri gösterilir. **Ay / Yıl** görünümü arasında geçebilirsiniz.
 4. **12 Aylık PDF**: seçili tarihi başlangıç kabul eden bir yıllık **tarih sıralı liste** açılır. İstenirse **periyodik kontrol/hatırlatmalar** eklenir. **Yazdır / PDF olarak kaydet** seçeneği tarayıcının yazdırma diyaloğunu açar.
@@ -20,6 +22,8 @@ Gemi acil durum role talimlerini planlamaya, seçilen haftanın pazar gününü 
 **English:** Offline single-file planner. Select vessel and date, review Sunday exercises and monthly/annual calendars, export the **rolling next 12 months** via Print/Save as PDF, or export the current calendar year as CSV/ICS.
 
 ## Kullanım kolaylığı
+
+- **HTML indir / Download HTML:** GitHub Pages üzerinden açılan uygulamadan doğrudan, tarayıcının indirme mekanizmasıyla çevrimdışı kopya alınabilir.
 
 - `Yangın *1` gibi kodlar yerine **Güverte Yangını**, **Yaşam Mahalli Yangını**, **Makine Dairesi Yangını**, **Kuzine Yangını** gösterilir; senaryo kodları ayrıntıda korunur.
 - Önceden çok yer kaplayan yıllık sayılar **ⓘ Yıllık plan bilgileri** bölümünde isteğe bağlı açılır.
@@ -35,7 +39,7 @@ Gemi acil durum role talimlerini planlamaya, seçilen haftanın pazar gününü 
 
 Bu amaçla **[gemi bazlı yazılım mimarisi](docs/ARCHITECTURE.md)** kabul edilmiştir: tek kod tabanı, kurum genel planlama motoru ve sürümlenebilir gemi profilleri. Kaynak etiketli ilk profil: [NENE HATUN profil verisi](data/vessels/nene-hatun.json). `index.html` çevrimdışı çalışabilmek için profil bilgilerini gömülü tutar; JSON dosyası şu an ayrıca otomatik yüklenmemektedir.
 
-## Testler ve güvenlik
+## Testler
 
 ```bash
 node tests/test-calendar.cjs
@@ -43,11 +47,17 @@ node tests/test-calendar.cjs
 
 Test paketi, 1900–2100 arasındaki 201 yılın temel talim aralıklarını ve senaryo dengesini; tarih sınırlarını, artık yıl davranışını, NENE HATUN/şablon ayrımını ve kayan 12 aylık raporu denetler. GitHub Actions iş akışı otomatik çalışır.
 
-Çıktılar **planlanmış** durumdadır. Operasyonel erteleme, gerçekleşen talim kayıtları, gemi role cetveli ve personel bilgileri v1.4.0 kapsamında tutulmaz. Kamuya açık depoya kurumun izin vermediği belgeleri, hassas gemi bilgisini veya personel bilgilerini koymayın.
+Çıktılar **planlanmış** durumdadır. Operasyonel erteleme, gerçekleşen talim kayıtları, gemi role cetveli ve personel bilgileri v1.4.1 kapsamında tutulmaz.
 
 ## GitHub Pages
 
-Depo sahibi **Settings → Pages → Deploy from a branch → main / (root) → Save** üzerinden çevrimiçi sunumu etkinleştirebilir. Pages etkinliği teyit edilene kadar canlı web bağlantısı garanti edilmez. Çevrimdışı `index.html` bundan bağımsızdır.
+1. Depo sahibi [Settings → Pages](https://github.com/bemiroglu/gemi-acil-role-talimleri/settings/pages) sayfasını açar.
+2. **Build and deployment → Source: Deploy from a branch** seçilir.
+3. **Branch: main** ve **Folder: /(root)** seçilip **Save** tıklanır.
+4. GitHub Pages yayımlaması başarılı olduğunda [https://bemiroglu.github.io/gemi-acil-role-talimleri/](https://bemiroglu.github.io/gemi-acil-role-talimleri/) uygulamayı doğrudan tarayıcıda açar. 
+5. Uygulamanın üst kısmındaki **HTML indir** bağlantısıyla aynı sunucudaki kaynak HTML, tarayıcıya indirilmek üzere sunulur.
+
+**Teknik açıklama:** GitHub’ın `blob/main/index.html` bağlantısı bir **kaynak kodu görüntüleyicisidir**. `raw.githubusercontent.com` bağlantısı da kaynak içerik teslimidir; bir web uygulamasının çalışacağı HTML sayfası bağlantısı yerine kullanılmamalıdır. Canlı uygulama bağlantısı GitHub Pages üzerinden sağlanır.
 
 ## Geliştirme
 
@@ -57,7 +67,7 @@ Depo sahibi **Settings → Pages → Deploy from a branch → main / (root) → 
 
 **Geliştirici:** Bilal Emiroğlu - TA1BU
 
-**Açık erişim ≠ açık kaynak lisansı:** Proje sahibi yeniden kullanım lisansını henüz seçmemiştir. Kodun kamuya açık olması kendiliğinden kullanım/değiştirme izni anlamına gelmez.
+**Telif ve açık lisans:** © 2026 Bilal Emiroğlu (TA1BU). Projenin özgün yazılım kodu ve ilgili özgün dokümantasyonu [MIT License](LICENSE) ile yayımlanır (SPDX: `MIT`). Lisans, üçüncü taraflara ait içeriklerin veya kurum belgelerinin telif haklarını devretmez. Uygulamanın düşük görünürlüklü geliştirici işareti korunur.
 
 ### Kaynakça (APA 7)
 
