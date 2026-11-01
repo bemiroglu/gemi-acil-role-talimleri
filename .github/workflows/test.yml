@@ -14,3 +14,5 @@ jobs:
           node-version: '22'
       - name: Verify calendar rules
         run: node tests/test-calendar.cjs
+      - name: Validate vessel profiles and catalog
+        run: node tests/test-vessel-profiles.cjs
