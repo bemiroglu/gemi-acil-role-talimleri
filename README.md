@@ -1,65 +1,66 @@
-# Gemi Acil Role Talimleri / Vessel Emergency Drill Planner
+# Gemi Acil Role Talimleri · Vessel Emergency Drill Planner
 
-**Türkçe varsayılan · English optional · Tek dosya HTML5 · Çevrimdışı çalışma**
+**Uygulama v1.4.0** · **Kanonik planlama politikası v1.2** · Türkçe / English · HTML5 · Çevrimdışı
 
-Gemi personelinin yıllık acil durum role talimlerini **planlamasını ve incelemesini** kolaylaştıran, iki dilli bir takvim uygulamasıdır. Kaynak olarak kurum içi EK-VI Rev.015 çizelgesi ile birlikte hazırlanmış **kanonik proje planlama politikası v1.2** kullanılır. **Uygulama sürümü: 1.3.0.**
+**[Uygulamayı aç / kaynağı görüntüle](./index.html)** · **[HTML dosyasını indir](https://raw.githubusercontent.com/bemiroglu/gemi-acil-role-talimleri/main/index.html)**
 
-> **Önemli:** Bağımsız ve kamuya açık bir proje aracıdır; Kıyı Emniyeti Genel Müdürlüğünün resmî uygulaması veya onaylı talimatı değildir. Gemi tipi, sefer, donanım, bayrak devleti mevzuatı ve geminin SMS/ISM prosedürleri ayrıca değerlendirilmelidir. Takvimdeki her etkinlik **planlanmış** durumdadır; fiilen icra edildiği anlamına gelmez.
+Gemi acil durum role talimlerini planlamaya, seçilen haftanın pazar gününü incelemeye ve **ileri dönük 12 aylık listeyi PDF olarak yazdırmaya** yönelik, kurulum ve dış kütüphane gerektirmeyen tek dosya uygulamasıdır. Takvim, kurum içi EK-VI Rev.015 çizelgesi esas alınarak geliştirilen **proje içi planlama politikası v1.2** üzerinden hesaplanır.
 
-## Uygulamayı kullanma
+> **Kapsam:** Bu açık kaynak proje **KEGM'nin resmî/onaylı uygulaması değildir**. Çizelge gerçekleşen talimleri kanıtlamaz; geminin tipi, seferi, bayrağı, donanımı, role cetveli ve güncel SMS/ISM prosedürleri ayrıca dikkate alınmalıdır.
 
-**[Ana HTML uygulaması: index.html](./index.html)** · **[Doğrudan kaynak HTML indir](https://raw.githubusercontent.com/bemiroglu/gemi-acil-role-talimleri/main/index.html)**
+## Hızlı kullanım
 
-1. `index.html` dosyasını bilgisayara indirip güncel bir tarayıcıda açın. Kurulum, API, hesap veya internet gerekmez.
-2. Tarih seçin: o tarihin ait olduğu **pazartesi–pazar** haftasının pazar talimleri gösterilir.
-3. **Ay/Yıl** görünümü arasında geçin; bir pazar gününe tıklayarak ilgili programı açın.
-4. **Acil dümen sistemi** (varsayılan var), **kurtarma/hizmet botu** (varsayılan var) ve **can filikası** (varsayılan yok) seçeneklerini **gerçek gemi donanımına göre** ayarlayın.
-5. Yıllık planı **CSV**, **ICS** veya **Yazdır/PDF** olarak alın. Kaydedilen bilgiler planlanan faaliyetlerdir.
+1. `index.html` dosyasını indirin ve güncel tarayıcıyla açın. İnternet/sunucu gerekmez.
+2. **Gemi profili** seçin: **NENE HATUN (pilot)** veya **Kurum genel planı**.
+3. Tarih seçin: seçilen tarihin haftasındaki **pazar günü** ve ait olduğu **ayın** talimleri gösterilir. **Ay / Yıl** görünümü arasında geçebilirsiniz.
+4. **12 Aylık PDF**: seçili tarihi başlangıç kabul eden bir yıllık **tarih sıralı liste** açılır. İstenirse **periyodik kontrol/hatırlatmalar** eklenir. **Yazdır / PDF olarak kaydet** seçeneği tarayıcının yazdırma diyaloğunu açar.
+5. **CSV (takvim yılı)** veya **.ics**: seçilen tarihin takvim yılına ait kayıtları dışa aktarır. Bunlar PDF'nin kayan 12 aylık dönemiyle aynı aralık değildir.
+6. Sağ üstten **English** dilini seçebilirsiniz.
 
-**English:** Open `index.html` offline and select **English** at the top right. Choose a date, inspect that week's Sunday drills, switch month/year views, adjust vessel equipment, and export CSV/ICS or print.
+**English:** Offline single-file planner. Select vessel and date, review Sunday exercises and monthly/annual calendars, export the **rolling next 12 months** via Print/Save as PDF, or export the current calendar year as CSV/ICS.
 
-## Temel özellikler
+## Kullanım kolaylığı
 
-| İşlev | Açıklama |
-| --- | --- |
-| Dil | Türkçe / English |
-| Takvim | 1900–2100; aylık ve yıllık görünüm; pazar günleri |
-| Yangın adları | `*1` Güverte Yangını, `*2` Yaşam Mahalli Yangını, `*3` Makine Dairesi Yangını, `*4` Kuzine Yangını |
-| Referanslar | Kullanıcıya açık senaryo adları gösterilir; senaryo kodları detay ve CSV'de kalır |
-| Beşinci pazar | Yangın + Gemiyi Terk **ayrı talimler** olarak planlanır; proje kuralıdır |
-| Donanım | Acil dümen, kurtarma/hizmet botu ve can filikası seçenekleri |
-| Diğer işlemler | Özel talimler, periyodik kontrol hatırlatmaları ve plan tavsiyeleri |
-| Çıktılar | CSV, ICS, yazdırma / PDF |
-| Mimari | Harici JavaScript kütüphanesi, sunucu ve veri toplama bulunmaz |
+- `Yangın *1` gibi kodlar yerine **Güverte Yangını**, **Yaşam Mahalli Yangını**, **Makine Dairesi Yangını**, **Kuzine Yangını** gösterilir; senaryo kodları ayrıntıda korunur.
+- Önceden çok yer kaplayan yıllık sayılar **ⓘ Yıllık plan bilgileri** bölümünde isteğe bağlı açılır.
+- Kaynak ve kapsam notları ile ay özeti katlanabilir. Haftalık program öne çıkar.
+- **12 aylık PDF**, ana sayfanın görüntüsünü değil, aylara ayrılmış **plan çizelgesini** A4 sayfalara basar.
+- Beşinci pazar bulunduğunda Yangın ve Gemiyi Terk ayrı iki talimdir. Bu, yayımlanmış bir SOLAS/KEGM hükmü olarak değil, **proje kararı** olarak ele alınır.
 
-### Planlama kurallarından örnekler
+## Gemi profilleri: önemli ayrım
 
-Yangın talimi ayın **1. ve 3. pazarlarında**, Gemiyi Terk talimi **2. ve 4. pazarlarında** planlanır. Beşinci pazar bulunduğunda her iki faaliyet ayrıca takvime konur. Yangın senaryo dağılımı için deterministik yıllık dengeleme uygulanır.
+**NENE HATUN**, bu sürümün **pilot çalışma profili** olarak başlangıçta seçilidir. KEGM'nin kamuya açık bilgilerinde geminin bazı özel kabiliyetleri doğrulanabilse de, **acil dümen sistemi, can filikası ve kurtarma/hizmet botunun güncel envanter durumu bu proje için doğrulanmamıştır**. Bu üç donanıma bağlı faaliyetler bu görünümde **olası/şarta bağlı aday** olarak gösterilir ve **ENVANTER TEYİDİ GEREKLİ** işaretini taşır. Bu görünüm, gemide üç sistemin de bulunduğunu ileri sürmez.
 
-**2026:** Yangın 28, Gemiyi Terk 28. Beşinci pazar günleri 29 Mart (`*4`), 31 Mayıs (`*1`), 30 Ağustos (`*3`), 29 Kasım (`*2`).
+**Kurum genel planı** seçildiğinde üç donanım onay kutusu, **örnek/simülasyon varsayımı** olarak katlanır bir panelde sunulur. Bu seçenekler hiçbir geminin envanterini doğrulamaz.
 
-Bu kuralların tümünün SOLAS veya ulusal mevzuat tarafından aynı biçimde zorunlu tutulduğu iddia edilmez. Operasyonel erteleme ve personel/posta katılımı bu sürümde kaydedilmez.
+Bu amaçla **[gemi bazlı yazılım mimarisi](docs/ARCHITECTURE.md)** kabul edilmiştir: tek kod tabanı, kurum genel planlama motoru ve sürümlenebilir gemi profilleri. Kaynak etiketli ilk profil: [NENE HATUN profil verisi](data/vessels/nene-hatun.json). `index.html` çevrimdışı çalışabilmek için profil bilgilerini gömülü tutar; JSON dosyası şu an ayrıca otomatik yüklenmemektedir.
 
-## Sürüm ve testler
-
-Uygulamanın **1.3.0** sürümünde talim adları açıklayıcı hâle getirildi; kullanıcıya görünen **Algoritma Denetimi** bölümü kaldırıldı. Matematiksel testler korunmuştur:
+## Testler ve güvenlik
 
 ```bash
 node tests/test-calendar.cjs
 ```
 
-Bağımlılıksız test, 1900–2100 yıllarını ve 2026 regresyon senaryolarını kontrol eder. GitHub Actions iş akışı mevcut olduğunda her `push` ve pull request üzerinde çalışır.
+Test paketi, 1900–2100 arasındaki 201 yılın temel talim aralıklarını ve senaryo dengesini; tarih sınırlarını, artık yıl davranışını, NENE HATUN/şablon ayrımını ve kayan 12 aylık raporu denetler. GitHub Actions iş akışı otomatik çalışır.
+
+Çıktılar **planlanmış** durumdadır. Operasyonel erteleme, gerçekleşen talim kayıtları, gemi role cetveli ve personel bilgileri v1.4.0 kapsamında tutulmaz. Kamuya açık depoya kurumun izin vermediği belgeleri, hassas gemi bilgisini veya personel bilgilerini koymayın.
 
 ## GitHub Pages
 
-Depo sahibi **Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save** adımlarını tamamladıktan sonra sayfayı GitHub Pages üzerinden yayımlayabilir. **GitHub Pages ayarı henüz teyit edilmedikçe çevrimiçi uygulama adresi etkin kabul edilmemelidir.**
+Depo sahibi **Settings → Pages → Deploy from a branch → main / (root) → Save** üzerinden çevrimiçi sunumu etkinleştirebilir. Pages etkinliği teyit edilene kadar canlı web bağlantısı garanti edilmez. Çevrimdışı `index.html` bundan bağımsızdır.
 
-## Güvenlik, gizlilik ve paylaşım
+## Geliştirme
 
-Kamuya açık depoya kurumun onay vermediği prosedür PDF'leri, gizli gemi bilgileri, role cetvelindeki personel bilgileri veya doldurulmuş ISM formları eklenmemelidir. Geliştirici işareti kaynak içinde kodlanarak düşük görünürlükte gösterilir; bu yöntem **kriptografik olarak değiştirilemez** bir imza değildir.
+- [Değişiklik geçmişi](CHANGELOG.md)
+- [Yol haritası](ROADMAP.md)
+- [Gemi bazlı mimari ve koşullu talimler](docs/ARCHITECTURE.md)
 
-**Lisans:** Proje sahibi açık kaynak yeniden kullanım lisansı henüz seçmemiştir. Kamuya açık olmak otomatik olarak herhangi bir lisans vermemektedir.
+**Geliştirici:** Bilal Emiroğlu - TA1BU
 
-**İleride:** Doğrulanmış kaynaklara dayalı talim prosedür ekranları, ISM kayıt **taslakları**, gemi role cetveli ve görev dağılımı. Ayrıntılar: [ROADMAP.md](./ROADMAP.md).
+**Açık erişim ≠ açık kaynak lisansı:** Proje sahibi yeniden kullanım lisansını henüz seçmemiştir. Kodun kamuya açık olması kendiliğinden kullanım/değiştirme izni anlamına gelmez.
 
-**Geliştirici:** Bilal Emiroğlu – TA1BU · **Uygulama v1.3.0** · **Kanonik planlama politikası v1.2**
+### Kaynakça (APA 7)
+
+Kıyı Emniyeti Genel Müdürlüğü. (t.y.). *Eğitim manueli: Yıllık role talimleri ve periyodik kontroller, EK-VI* (Rev. 015) [Kurum içi planlama çizelgesi].
+
+Kıyı Emniyeti Genel Müdürlüğü. (t.y.). *Dünya denizlerinde risk nöbeti*. https://kiyiemniyeti.gov.tr/haber/192/%E2%80%9CDUNYA-DENIZLERINDE-RISK-NOBETI%E2%80%9D
