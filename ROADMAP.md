@@ -17,20 +17,22 @@ Planlanan işler tamamlanmış uygulama işlevleri gibi sunulmaz.
 - [ ] Yeni geminin katalogdan kullanıcı arayüzünde otomatik seçilmesi; bugün henüz desteklenmiyor.
 - [ ] Gerçek NENE HATUN can filikası, kurtarma/hizmet botu, acil dümen envanteri için belge bazlı doğrulama ve gemi sorumlu teyidi.
 
-## Aşama 2 — İki bilgi sayfası (v1.5.1)
+## Aşama 2 — İki bilgi sayfası ve ayrıntılı eğitim (v1.6.0)
 - [x] Talim Rehberi: eğitim amacı, uygulama sırası, emniyet ve risk başlıkları, ilgili kaynak hatırlatıcıları.
 - [x] Rapor Yazım Rehberi: geçmiş zamanlı örnek senaryo, evrak, rapor içeriği ve EK-V konularının yalnızca **okuma listesi**.
 - [x] Örnek metni kopyalama; form/risk puanı/checklist doldurma gerektirmeyen tek dosya.
 - [x] IAMSAR Vol. III 2025 için SAR tematik eğitim başlıkları ve kaynak notu.
 - [x] Takvim v1.2 algoritması, 12 Aylık PDF, CSV, ICS, TR/EN korunuyor.
-- [ ] Her talimde geminin güncel onaylı eğitim/prosedür kaynaklarına dayalı içeriğin kademeli olarak genişletilmesi.
+- [x] 12 talim türünde, kaynaklı genel eğitim açıklamalarının kapsamını genişletme (v1.6.0; Gemiyi Terk ekipman eğitimi ayrıntılı).
+- [x] Kamuya açık resmî/teknik kaynakları ve lisans sınırlarını APA 7 kaynakça dosyasında toplama.
+- [ ] Her talim için geminin **güncel ve onaylı** eğitim/prosedürlerine birebir uygulanabilirlik incelemesi; model/ekipman özel talimatlarını yetkili çevrimdışı içerik paketine bağlama.
 - [ ] Kaynak, revizyon ve uygulanabilirlik belgelerinin yetkili kurumsal veri alanında yönetimi.
 - [ ] Gemiye özel onaylanmış ekipman/prosedür verisinin güvenli, ayrı ve isteğe bağlı entegrasyonu.
 - [ ] Personel ve role görevlerinin yönetimi (daha sonraki aşama).
 - [ ] Elektronik risk/ISM formları ve otomatik kayıt hazırlama (yalnızca ileride ayrıca kararlaştırılırsa).
 
-## Aşama 2 — Kaynaklı talim prosedürleri
-- [x] Salt-okunur talim rehberi (v1.5.1); [ ] güncel gemiye özgü onaylı prosedür verisiyle eşleştirme.
+## Aşama 2B — Kaynaklı gemiye özgü prosedürler (sonraki çalışma)
+- [x] Genişletilmiş salt-okunur talim rehberi (v1.6.0); [ ] güncel gemiye özgü onaylı prosedür verisiyle eşleştirme.
 - [ ] Mevzuat maddesi, kurum SMS/ISM prosedür revizyonu ve iyi uygulamanın ayrı gösterimi.
 - [ ] Emniyet/durdurma kriterleri, hazırlık, icra, değerlendirme ve ilgili form.
 - [ ] Gemi görevine özgü yeni senaryolar için ayrı veri katmanı (yasal/kural dayanağı kontrol edilerek).
