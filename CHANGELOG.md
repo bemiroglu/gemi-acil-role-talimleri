@@ -1,5 +1,16 @@
 # Değişiklik Kaydı / Changelog
 
+## 1.5.1 — 2026-11-03
+- Kullanıcı iş akışı yalınlaştırıldı: **takvim + Talim Rehberi + Rapor Yazım Rehberi**.
+- Web üzerinde ikinci bir form doldurma, elektronik risk analizi, kontrol maddesi işaretleme, personel/kayıt alanı, PDF/JSON kayıt taslağı **kaldırıldı**.
+- Talim Rehberi: amaç, genel eğitim sırası, risk tehlike başlıkları, emniyet tedbirleri, kaynak/form hatırlatmaları.
+- SAR rehberine IMO/ICAO **IAMSAR Volume III (2025)** başlıklarına dayalı özgün SAR eğitimi hatırlatıcıları eklendi; ücretli el kitabı metni kopyalanmadı.
+- Rapor Yazım Rehberi: **geçmiş zamanlı örnek anlatım**, kopyalama, EK-V kontrol konularının salt-okunur listesi, evrak ve rapor yazım hatırlatıcıları.
+- Takvim motoru, **kanonik politika v1.2**, 12 Aylık PDF, CSV, ICS, iki dil ve gemi profili seçici korundu.
+- GitHub CI testleri elektronik form olmaması ve iki rehberin işlevini kontrol edecek şekilde güncellendi.
+- Bu sürüm **resmî EK-V/ISM formu üretmez**; talim raporları mevcut kurum yöntemiyle doldurulur.
+
+
 ## 1.5.0 — 2026-11-02
 
 - Seçilen talimin kartına **Talim Eğitimi** ve **Örnek & EK-V Taslağı** düğmeleri eklendi.
