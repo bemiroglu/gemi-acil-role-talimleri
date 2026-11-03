@@ -1,4 +1,4 @@
-# v1.5.1 — Talim Rehberi ve Rapor Yazım Rehberi
+# v1.6.0 — Ayrıntılı Talim Rehberi ve Rapor Yazım Rehberi
 
 Uygulama: **https://bemiroglu.github.io/gemi-acil-role-talimleri/**
 
@@ -15,6 +15,20 @@ Takvimde talim kartındaki **Talim Rehberi** açılır. İçerik sırasıyla:
 5. **Emniyet sınırları:** Gerçek sistem testlerinin onaylı talimat, ekipman koşulu ve risk değerlendirmesiyle yapılması.
 
 **SAR örneği:** IAMSAR Volume III 2025 (bölüm başlıklarına dayalı özgün özet), ilk ihbar, RCC/MRCC/OSC koordinasyonu, arama alanı ve paterni değerlendirme, olay yeri iletişimi, kurtarma, ilk yardım, sonuç değerlendirmesi gibi konular. Bu sayfa IAMSAR'ın tam metni veya operasyonel emir yerine geçmez.
+
+### Ayrıntılı ders notları
+
+Talim Rehberi'ndeki bütün ana eğitim başlıklarının altında okunabilir açıklamalar bulunur. Özellikle Gemiyi Terk için:
+- Can yeleğinin doğru beden/bağlama şekli, düdük/ışık/reflektör.
+- Dalma giysisinin amacı, tip/beden kontrolü, oturarak giyme, başlık/fermuar/yüz kapakçığı ve gerekliyse can yeleği kombinasyonu.
+- Can salı konteyneri, painter, HRU, kapasite/servis bilgisi, çadır, deniz demiri, giriş ve hayatta kalma donanımı.
+- Can salına biniş, barınma, ısı kaybı, su/erzak, nöbet ve haberleşme.
+- EPIRB, SART/AIS-SART, acil VHF ve gündüz-gece işaretlerinin ayrı amaçları.
+- Bot ve kurtarma vasıtaları için farklı envanter kategorileri ve güvenli indirme kararları.
+
+Eğitim akışı açık görünür; gerekirse üstteki kısa içerik dizininden ilgili konuya doğrudan gidilebilir. Bilgiler özgün eğitici anlatımlardır; geminin mevcut üretici kitabındaki tipe özgü işletme usulü yerine geçmez.
+
+**Kaynak listesi:** [EDUCATIONAL_SOURCES.md](EDUCATIONAL_SOURCES.md).
 
 ## 02 · Rapor Yazım Rehberi
 
