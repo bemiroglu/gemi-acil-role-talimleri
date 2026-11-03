@@ -1,4 +1,4 @@
-# v1.6.0 — Ayrıntılı Talim Rehberi ve Rapor Yazım Rehberi
+# v1.7.0 — Ayrıntılı Talim Rehberi ve Rapor Yazım Rehberi
 
 Uygulama: **https://bemiroglu.github.io/gemi-acil-role-talimleri/**
 
@@ -29,6 +29,12 @@ Talim Rehberi'ndeki bütün ana eğitim başlıklarının altında okunabilir a�
 Eğitim akışı açık görünür; gerekirse üstteki kısa içerik dizininden ilgili konuya doğrudan gidilebilir. Bilgiler özgün eğitici anlatımlardır; geminin mevcut üretici kitabındaki tipe özgü işletme usulü yerine geçmez.
 
 **Kaynak listesi:** [EDUCATIONAL_SOURCES.md](EDUCATIONAL_SOURCES.md).
+
+### Anlatım zamanı ve senaryo özgüllüğü
+
+**Talim Rehberi**, personele eğitim veren zabit için geniş zamanda sunulur: “Role istasyonları ve kaptana rapor akışı gözden geçirilir.” **Rapor Yazım Rehberi** ise form/jurnal metni yazmayı desteklemek üzere geçmiş zamanda örnek anlatım verir: “Role istasyonları kontrol edildi, kaptana bilgi verildi.”
+
+Yangın talimindeki dört farklı senaryonun eğitim akışı ve teknik notları birbirinden farklıdır. Güverte/boyalık, yaşam mahalli, makine dairesi ve kuzine senaryolarını takvimden ayrı ayrı açarak kontrol edin. Deniz kirliliği ve kapalı mahal alt senaryolarında da kaynak ve tehlike türüne özgü odak görünür.
 
 ## 02 · Rapor Yazım Rehberi
 
