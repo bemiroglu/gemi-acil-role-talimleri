@@ -1,5 +1,17 @@
 # Değişiklik Kaydı / Changelog
 
+## 1.6.0 — 2026-11-03
+- Talim Rehberi'ndeki kısa adım açıklamaları, **12 talim türü için ayrıntılı ve özgün eğitim metinleriyle** genişletildi.
+- Gemiyi Terk: 8 safhada 29 açıklama; can yeleği, dalma giysisi, şişirilebilir can salı, sinyal/haberleşme donanımı ve denizde hayatta kalma üzerine 7 teknik ders notu eklendi.
+- Yangın, kurtarma botu, MOB, SAR, acil dümen, kapalı mahal, kirlilik ve diğer talimlerde konuya özgü genişletilmiş bilgiler sunuldu.
+- Birinci rehberde **içerik dizini**, bölüm içi bağlantılar ve **resmî/açık kaynak bağlantıları** eklendi.
+- İlk ve ikinci rehberdeki tekrarlı okuyucu/örnek uyarı paragrafları görünümden kaldırıldı; rapor örneğinin ayrı türde olduğu kısa başlıkta korunuyor.
+- **Rapor Yazım Rehberi** geçmiş zamanlı metin ve belge hatırlatıcılarıyla korundu; çevrimiçi formlar eklenmedi.
+- Kamuya açık HTML içerikleri özgün, genelleştirilmiş eğitim anlatımlarıdır; kurumun özgün dokümanları, kişisel veriler ve lisanslı IAMSAR metni yayımlanmadı.
+- Takvim motoru **kanonik politika 1.2** korunarak Chromium üzerinde 201 yıllık regresyon, modal, mobil ve iki dil kontrolleri gerçekleştirildi.
+- `docs/EDUCATIONAL_SOURCES.md` ile kaynakça, sürüm ve içerik sınırları belgelendi.
+
+
 ## 1.5.1 — 2026-11-03
 - Kullanıcı iş akışı yalınlaştırıldı: **takvim + Talim Rehberi + Rapor Yazım Rehberi**.
 - Web üzerinde ikinci bir form doldurma, elektronik risk analizi, kontrol maddesi işaretleme, personel/kayıt alanı, PDF/JSON kayıt taslağı **kaldırıldı**.
