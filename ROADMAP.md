@@ -24,6 +24,12 @@ Planlanan işler tamamlanmış uygulama işlevleri gibi sunulmaz.
 - [x] IAMSAR Vol. III 2025 için SAR tematik eğitim başlıkları ve kaynak notu.
 - [x] Takvim v1.2 algoritması, 12 Aylık PDF, CSV, ICS, TR/EN korunuyor.
 - [x] 12 talim türünde, kaynaklı genel eğitim açıklamalarının kapsamını genişletme (v1.6.0; Gemiyi Terk ekipman eğitimi ayrıntılı).
+- [x] Talim Rehberi'nde geniş zaman; Rapor Yazım Rehberi'nde geçmiş zaman ayrımı (v1.7.0).
+- [x] Güverte, Yaşam Mahalli, Makine Dairesi ve Kuzine yangınlarının ayrı 8 aşamalı eğitim içerikleri (v1.7.0).
+- [x] Tank taşması/sızıntı ve üç farklı kapalı mahal senaryosunda ayrı teknik odaklar.
+- [ ] Gemiye özgü ekipman model ve sistem işletme prosedürlerini onaylı veri paketiyle eşleştirme.
+- [ ] Diğer alt senaryoları da dört yangın türündeki ayrıntı düzeyine ulaştırma.
+
 - [x] Kamuya açık resmî/teknik kaynakları ve lisans sınırlarını APA 7 kaynakça dosyasında toplama.
 - [ ] Her talim için geminin **güncel ve onaylı** eğitim/prosedürlerine birebir uygulanabilirlik incelemesi; model/ekipman özel talimatlarını yetkili çevrimdışı içerik paketine bağlama.
 - [ ] Kaynak, revizyon ve uygulanabilirlik belgelerinin yetkili kurumsal veri alanında yönetimi.
