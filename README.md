@@ -1,6 +1,6 @@
 # Gemi Acil Role Talimleri
 
-**Uygulama v1.5.1** · **Kanonik takvim politikası v1.2** · Türkçe / English · Tek HTML5 dosyası · Çevrimdışı çalışma
+**Uygulama v1.6.0** · **Kanonik takvim politikası v1.2** · Türkçe / English · Tek HTML5 dosyası · Çevrimdışı çalışma
 
 ## Uygulamayı açın
 
@@ -22,6 +22,20 @@ Bu açık kaynak proje, gemide yapılacak acil durum role talimlerinin **takvimd
 **Yeni sürümde ek web formu yoktur.** Web üzerinde risk değerlendirmesi doldurulmaz, kontrol maddeleri işaretlenmez, personel girilmez, tutanak hazırlanıp onaylanmaz. Bu işler, sonraki ve ayrı bir geliştirme aşamasına bırakılmıştır.
 
 **English:** Select a vessel/date; open **Drill Guide** for training, hazards and precautions, or **Reporting Guide** for a past-tense example and documentation reminders. Neither page asks you to fill in an online form.
+
+## v1.6.0 — Ayrıntılı eğitim içeriği
+
+**01 · Talim Rehberi** artık sadece kısa hatırlatıcı başlıklardan oluşmaz. Kurumun mevcut eğitim ve prosedür dokümanlarında yer alan **eğitim konu başlıkları**, SOLAS III/19 ve III/35, LSA Code, IMO ve erişilebilir eğitim kaynaklarından oluşturulan **özgün ve ayrıntılı açıklamalarla** desteklenmiştir.
+
+- **Gemiyi Terk:** 8 ana safhada 29 ayrıntılı açıklama; can yeleği giyme, dalma giysisi seçimi ve giyilmesi, şişirilebilir can salının yapısı ve biniş, GMDSS/EPIRB/SART, hayatta kalma, hipotermi ve kötü hava üzerine 7 ek teknik eğitim konusu.
+- **Yangın:** 8 ana safha, 19 açıklama; yangın türü, söndürücü seçimi, koruyucu donanım, solunum cihazı/EEBD farkı ve sabit söndürme sistemi konuları.
+- **Kurtarma/hizmet botu, MOB, SAR, acil dümen, kapalı mahal, kirlilik, karaya oturma, su alma, acil kalkış ve can filikası:** Talim türünün kendi tehlikeleri ve eğitim safhalarıyla genişletilmiş anlatımlar.
+- Eğitim başlıkları **ek tıklama gerekmeksizin açık görünür**; üstte kısa içerik dizini, altta ilgili kamuya açık kaynak bağlantıları vardır.
+- İkinci sayfada geçmiş zamanlı örnek anlatım ve evrak hatırlatıcıları **değişmeden korunur**. İki ekrandaki gereksiz tekrar uyarıları kaldırılmıştır; yeni elektronik form eklenmemiştir.
+
+**Kaynak ve yayın sınırı:** Özgün kurum el kitapları, doldurulmuş formlar ve lisanslı IAMSAR tam metni kamuya açık HTML içine kopyalanmamıştır. Eğitim bilgileri özgün, yeniden yazılmış ve kaynaklandırılmış açıklamalardır. Üreticiye özgü bot/davit kilit ve işletme sırası, gemide geçerli onaylı teknik talimatla yürütülmelidir.
+
+**[Talim Eğitim Kaynakları (APA 7)](docs/EDUCATIONAL_SOURCES.md)**
 
 ## Kapsam ve kaynak yaklaşımı
 
