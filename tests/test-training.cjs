@@ -30,7 +30,13 @@ assert.equal(t.training({key:'MOB'}).risks.length,5);
 assert(!html.includes('MUSTAFA UMUT ÖZERBAY')&&!html.includes('ÇAĞLAR ASLAN'),'Historic crew names exposed');
 for (const id of ['drillBackdrop','drillTrainingTab','drillRecordTab','drillTraining','drillRecord'])
   assert(html.includes('id="'+id+'"'),'Missing workspace element: '+id);
-assert(html.includes('ÖRNEK SENARYODUR')&&html.includes('YALNIZCA ÖRNEK'));
+assert(html.includes('D_EXPANDED') && html.includes('D_TOPICS') && html.includes('dStageDetail'));
+assert(html.includes('Dalma giysisi: özellikler, giyilme sırası'));
+assert(html.includes('Şişirilebilir can salı: yapı ve parçalar'));
+assert(html.includes('MSC.1/Circ.1578/Rev.1'));
+assert(!html.includes('<p class="dHint">'+String.fromCharCode(39)+'+h(dg('+String.fromCharCode(39)+'sampleNotice'))'));
+assert(!html.includes('<p class="dReadOnlyNotice">'+String.fromCharCode(39)+'+h(dg('+String.fromCharCode(39)+'intro'))'));
+
 assert(html.includes('IAMSAR Manual')&&html.includes('sourceSAR'));
 assert(html.includes('dCopySample'));
 assert(!html.includes('function drillDraftText()')&&!html.includes('function drillReady()'));
@@ -39,4 +45,4 @@ assert(!html.includes('id="dConfirmed"')&&!html.includes('data-field=')&&!html.i
 assert(!html.includes('data-risk-status='));
 assert(t.sample({key:'ABANDON'}).includes('alarmı verildi'));
 assert(t.documents({key:'SAR'}).some(x=>x.includes('IAMSAR')));
-console.log('PASS: two read-only guide pages, 8/12 topics, SAR sources, no online forms, privacy');
+console.log('PASS: expanded training content, lifejackets/immersion suits/liferafts, read-only reporting and privacy');
