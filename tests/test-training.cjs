@@ -28,9 +28,15 @@ assert(t.training({key:'FIRE'}).steps.length>=8);
 assert.equal(t.training({key:'RESCUE_BOAT'}).risks.length,4);
 assert.equal(t.training({key:'MOB'}).risks.length,5);
 assert(!html.includes('MUSTAFA UMUT ÖZERBAY')&&!html.includes('ÇAĞLAR ASLAN'),'Historic crew names exposed');
-for (const id of ['drillBackdrop','drillTrainingTab','drillRecordTab','drillTraining','drillRecord','drillPrint'])
+for (const id of ['drillBackdrop','drillTrainingTab','drillRecordTab','drillTraining','drillRecord'])
   assert(html.includes('id="'+id+'"'),'Missing workspace element: '+id);
 assert(html.includes('ÖRNEK SENARYODUR')&&html.includes('YALNIZCA ÖRNEK'));
-assert(html.includes('function drillDraftText()')&&html.includes('function drillReady()'));
-assert(html.includes('function drillSaveJson()')&&html.includes('function drillLoadJson(file)'));
-console.log('PASS: training tabs, 8/12 checklists, hazards, record controls and privacy checks');
+assert(html.includes('IAMSAR Manual')&&html.includes('sourceSAR'));
+assert(html.includes('dCopySample'));
+assert(!html.includes('function drillDraftText()')&&!html.includes('function drillReady()'));
+assert(!html.includes('function drillSaveJson()')&&!html.includes('function drillLoadJson(file)'));
+assert(!html.includes('id="dConfirmed"')&&!html.includes('data-field=')&&!html.includes('data-check='));
+assert(!html.includes('data-risk-status='));
+assert(t.sample({key:'ABANDON'}).includes('alarmı verildi'));
+assert(t.documents({key:'SAR'}).some(x=>x.includes('IAMSAR')));
+console.log('PASS: two read-only guide pages, 8/12 topics, SAR sources, no online forms, privacy');
