@@ -43,4 +43,34 @@ assert(!html.includes('id="dConfirmed"')&&!html.includes('data-field=')&&!html.i
 assert(!html.includes('data-risk-status='));
 assert(t.sample({key:'ABANDON'}).includes('alarmı verildi'));
 assert(t.documents({key:'SAR'}).some(x=>x.includes('IAMSAR')));
-console.log('PASS: expanded training content, lifejackets/immersion suits/liferafts, read-only reporting and privacy');
+
+const fireExpectations = [
+  [1, 'boyalık', 'solvent'],
+  [2, 'kabin', 'koridor'],
+  [3, 'sıcak yüzeye', 'CO₂'],
+  [4, 'fritözün', 'yağ']
+];
+for (const [scenario, intro, topic] of fireExpectations) {
+  const e={key:'FIRE',scenario};
+  const training=t.training(e);
+  const variant=t.variant(e);
+  assert.equal(training.steps.length,8,'Fire steps: '+scenario);
+  assert(training.steps[0][1].toLocaleLowerCase('tr-TR').includes(intro),'Fire introduction: '+scenario);
+  assert(variant&&variant.topics.length>=4&&variant.notes.length===8,'Distinct scenario guidance: '+scenario);
+  assert(JSON.stringify(variant).toLocaleLowerCase('tr-TR').includes(topic.toLocaleLowerCase('tr-TR')),'Technical topic: '+scenario);
+  for(const step of training.steps) {
+    assert(!/(?:değerlendirildi|gösterildi|yapıldı|anlatıldı|geçirildi|incelendi)\./.test(step[1]),'Training guide has past tense: '+scenario);
+  }
+}
+assert.notEqual(t.training({key:'FIRE',scenario:3}).aim,t.training({key:'FIRE',scenario:4}).aim);
+for (const key of ['FIRE','ABANDON','RESCUE_BOAT','MOB','SAR','STEERING','CONFINED','POLLUTION','LIFEBOAT','GROUNDING','FLOOD','EMERGENCY_DEPARTURE']) {
+  const d=t.training({key});
+  assert(d.steps.length>=4,'Missing learning steps for '+key);
+  for (const step of d.steps)assert(!/(?:değerlendirildi|gösterildi|yapıldı|anlatıldı|geçirildi|incelendi)\./.test(step[1]),'Past tense in first guide: '+key);
+}
+assert(t.variant({key:'POLLUTION',scenario:1}).focus !== t.variant({key:'POLLUTION',scenario:2}).focus);
+assert(t.variant({key:'CONFINED',scenario:1}).focus !== t.variant({key:'CONFINED',scenario:3}).focus);
+assert(html.includes('function dScope(e)')&&html.includes('D_SOURCE_SCOPES'));
+assert(html.includes('D_FIRE_REPORT_DETAIL'));
+
+console.log('PASS: 12 present-tense training families, four fire scenarios, special-location variants and read-only reporting');
