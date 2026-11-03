@@ -1,85 +1,55 @@
-# Talim Eğitimi ve Kayıt Hazırlama — v1.5.0 Kullanım / Test Rehberi
+# v1.5.1 — Talim Rehberi ve Rapor Yazım Rehberi
 
-## Çalışan uygulama
+Uygulama: **https://bemiroglu.github.io/gemi-acil-role-talimleri/**
 
-**https://bemiroglu.github.io/gemi-acil-role-talimleri/**
+Bu sürümün iki yardımcı ekranı **yalnızca bilgi vermek** için tasarlanmıştır. Talimi gerçekleştiren personelin kâğıt/ERP üzerinde yürüttüğü kayıt faaliyetleri ikinci kez tarayıcıda yaptırılmaz.
 
-Bu ek özellikler `index.html` içine gömülüdür; ikinci bir dosya, sunucu, API, kullanıcı hesabı veya internet bağlantısı gerektirmez. Tek dosyalı çevrimdışı kopya aynı işlevlerle açılabilir.
+## 01 · Talim Rehberi
 
-**Kapsam:** Eğitim ve kayıt hazırlama prototipidir; resmî/kurumca onaylı EK-V, ISM kayıt sistemi veya gemiye özgü yürürlükteki prosedür yerine geçmez. Genel kontrol maddeleri kurumca kullanılacak onaylı formun birebir aktarımı değildir. Yalnızca planlama algoritması **kanonik politika v1.2** esaslarını korur.
+Takvimde talim kartındaki **Talim Rehberi** açılır. İçerik sırasıyla:
 
-## A. Talim Eğitimi
+1. **Amaç:** Bu talimin hangi bilgi ve becerileri geliştirdiği.
+2. **Eğitim ve uygulama akışı:** İlk tespit, haberleşme, alarm, organizasyon, müdahale, emniyet ve kapanış.
+3. **Risk hatırlatıcıları:** Geminin yetkili risk değerlendirmesinde incelenecek tehlike konuları. **Puanlama, onay veya elektronik form yoktur.**
+4. **Başvurulacak belgeler:** İlgili kurum SMS/ISM prosedürü, gerekiyorsa özel kontrol listesi, risk formu, jurnaller ve üretici talimatı.
+5. **Emniyet sınırları:** Gerçek sistem testlerinin onaylı talimat, ekipman koşulu ve risk değerlendirmesiyle yapılması.
 
-1. Tarih ve gemi seçin.
-2. Sağdaki **Seçilen haftanın pazarı** alanında bir talimin **Talim Eğitimi** düğmesine basın. Aynı pazar içindeki her talim ayrı kart olarak açılır.
-3. Talimin amacını, kaynak/kapsam uyarılarını, sıralanmış eğitim safhalarını, risk tehlikelerini ve güvenlik sınırlamalarını okuyun.
-4. Risk başlıklarına **Değerlendirilmedi / Gözden geçirildi / İlave tedbir gerekli / Uygulanamaz** durumlarını girin. Somut risk puanı veya eski onay otomatik aktarılmaz.
-5. Güncel kurum SMS/ISM prosedürünün, ekipmanın üretici talimatının ve somut işin risk değerlendirmesinin ayrıca temin edilip sorumlu personelce uygulanmasını sağlayın.
+**SAR örneği:** IAMSAR Volume III 2025 (bölüm başlıklarına dayalı özgün özet), ilk ihbar, RCC/MRCC/OSC koordinasyonu, arama alanı ve paterni değerlendirme, olay yeri iletişimi, kurtarma, ilk yardım, sonuç değerlendirmesi gibi konular. Bu sayfa IAMSAR'ın tam metni veya operasyonel emir yerine geçmez.
 
-Önemli: Bu görünümdeki adımlar genel eğitim metinleridir. Gemiye, personele, hava-deniz koşullarına ve geçerli revizyona göre yetkili zabitin değerlendirmesi zorunludur.
+## 02 · Rapor Yazım Rehberi
 
-## B. Örnek Senaryo / EK-V Kayıt
+Talimin kartındaki **Rapor Yazım Rehberi** açılır. İçerik:
 
-1. Aynı talim kartından **Örnek & EK-V Taslağı** düğmesini veya açık çalışma alanındaki ikinci sekmeyi seçin.
-2. Solda **yalnızca örnek** olarak gösterilen **geçmiş zamanlı** doldurulmuş senaryoyu okuyun. “Alarm verildi”, “toplandı”, “kontrol edildi”, “bot suya indirildi” gibi ifadelerin tamamı, **örnek metin kurgusuna** aittir.
-3. Sağda **gerçekleşen tarih**, **sorumlu zabit**, **katılım**, **yer**, **senaryo adı**, **risk değerlendirme referansı** ve **talim sonucu** alanlarını gerçek bilgilerle doldurun.
-4. Kontrol listesinin her satırına **fiilen yapıldı / simüle edildi / anlatıldı / yapılmadı / uygulanamaz** durumlarından uygun olanını seçin; yapılmayan/uygulanamayan işlemlere gerekçe girin.
-5. Açık risk tedbirleri ve değerlendirilmemiş kalemler için gösterilen uyarıları giderin. Sonra kullanıcı doğrulama kutusunu işaretleyin.
-6. **Metin taslağını indir** (.txt), **Taslağı yazdır / PDF**, **Yerel taslak JSON indir** veya **Yerel taslak yükle** araçlarını kullanın.
-7. Taslak metni onaylı EK-V formuna **yetkili personel** aktarır; kurum ISM sistemi içindeki kayıt/yayımlama işlemi bağımsız olarak gerçekleştirilir.
+- **Geçmiş zamanla yazılmış örnek senaryo:** Alarm verildi, personel toplandı, haberleşme kontrol edildi, riskler değerlendirildi gibi fiillerle oluşturulan örnek anlatım. Gerekli emniyet şartları bulunduğu varsayılan örneklerde botun suya indirildiği gibi işlemler de **örnek metin içinde** yazılabilir.
+- **Evrak hatırlatıcısı:** EK-V, ilgili özel ISM kontrol listesi, risk değerlendirme formu ve uygun jurnal/ekipman kayıtları.
+- **Rapor yazımı için konu listesi:** Talim kimliği, olay ve icra sırası, fiilen yapılan/simüle edilen işlemler, eksiklik, düzeltici faaliyet.
+- **EK-V'deki konuların okuma listesi:** Yangın için sekiz, Gemiyi Terk için on iki konu.
 
-### Durum ayrımı
+**Tek etkileşim:** Örnek metni kopyalamak. Form/çizelge doldurma, kontrol maddesi işaretleme, risk puanı girme, JSON yükleme, kullanıcı onayı veya rapor PDF üretimi **yoktur**.
 
-| Durum | Kayıtta gösterim |
-| --- | --- |
-| Fiilen yapıldı | Fiilen uygulandı |
-| Simüle edildi | Senaryo gereği simüle edildi |
-| Anlatıldı / gösterildi | Eğitim/gösterim olarak işlendi |
-| Yapılmadı | Gerçekleştirilmedi; gerekçesi gerekli |
-| Uygulanamaz | Uygulanamaz olarak değerlendirildi; gerekçesi gerekli |
-| Henüz değerlendirilmedi | Tamamlanmamış taslak |
+Mevcut **12 Aylık PDF** takvim yazdırma işlevi ayrı bir özellik olarak korunur.
 
-**Yapılmadı** veya **Uygulanamaz** gerekçesiz ise ya da **İlave tedbir gerekli** olarak işaretlenmiş açık risk başlığı varsa taslak tamamlanmış gösterilmez. Kullanıcı doğrulaması, talimin başarıyla gerçekleştiğinin bağımsız delili değildir.
+## Kaynak ve gizlilik sınırı
 
-### Şu anda desteklenen örnekler
+- Kamuya açık HTML, kurum içi özgün prosedür veya doldurulmuş EK-V formunun sayfalarını içermez; eğitim ve yazım metinleri özgün/genelleştirilmiş örneklerdir.
+- Belge adı veya form kodu görmek, belgenin en son geçerli sürümünün doğrulandığı anlamına gelmez. Gemi üzerinde geçerli belgenin revizyonu kontrol edilir.
+- Geçmiş zamanlı **örnek kayıt**, gerçekleşmiş talim için doğrulama değildir. Gerçek evrak yalnızca fiilen yapılan veya açıkça simüle edilen uygulamaları göstermelidir.
+- İlk sürümde belirli talim türleri için ayrıntı düzeyleri farklıdır. Belge temelli kapsam, adım adım genişletilecektir.
+- Çalışan takvim algoritması kanonik politika 1.2'de tutulmuştur.
 
-- Yangın: Güverte, Yaşam Mahalli, Makine Dairesi ve Kuzine senaryo başlıkları; **8** genel kontrol konusu.
-- Gemiyi Terk: **12** genel kontrol konusu; gerçek/simüle bot indirme ayrımı.
-- Kurtarma/Hizmet Botu: indirme, manevra ve geri alma riskleri; **8** kontrol konusu.
-- MOB ve SAR: denize adam düşmesi, kazazede kurtarma ve arama-kurtarma koordinasyonu.
-- Acil Dümen, Kapalı Mahal, Deniz Kirliliği, Su Alma, Karaya Oturma ve Acil Kalkış: genel, özgün eğitim kartları ve örnek metinler.
-- Bütün talimler için varsayılan örnek yapı; **kurumun özel formunun birebir onaylı sürümü değildir**.
+## Kabul kontrolü
 
-**Form kaynakları:** EK-V Rev.016, EK-VI Rev.015, risk değerlendirme yaklaşımı, ilgili acil durum prosedürleri ve örnek senaryo kayıtları incelenmiş; ancak kurum içi belgeler kamuya açık uygulamaya **kopyalanmamıştır**. Eğitim kartları orijinal/genelleştirilmiş metindir. Belge revizyon ve uygulanabilirliği gemide ayrıca kontrol edilmelidir.
+1. 15.11.2026 tarihini seçin ve o günün Yangın taliminde **Talim Rehberi**ni açın.
+2. Eğitim akışını, kaynak ve risk listesini görün. **Hiçbir form alanı, kutucuk veya risk puanı doldurma gerekliliği bulunmamalı**.
+3. **Rapor Yazım Rehberi**ne geçin. Geçmiş zamanlı metni ve evrak hatırlatıcılarını okuyun; isterseniz örneği kopyalayın.
+4. 22.11.2026 tarihli Gemiyi Terk taliminde ilgili 12 kontrol başlığının **okuma listesi** olarak gösterildiğini doğrulayın.
+5. 08.03.2026 tarihli Arama Kurtarma taliminde **IAMSAR** başlıklarını inceleyin.
+6. Pencereyi kapatın; aylık/yıllık takvimin, 12 aylık PDF'nin, CSV/ICS'nin ve iki dilin eski işlevleriyle çalıştığını kontrol edin.
 
-## Test senaryosu
+**Sınır:** Bu sürüm bir eğitim ve rapor yazım yardımcısıdır; resmî bir prosedür veya işletme eğitimi sertifikasyon sistemi değildir.
 
-1. Tarihi **15.11.2026** yapıp ilgili Yangın talimini açın.
-2. **Talim Eğitimi** sekmesinde aşama kartlarını ve risk listelerini inceleyin.
-3. **Örnek & EK-V Taslağı** sekmesine geçin. Örnek senaryonun geçmiş zamanlı olduğunu, **8 kontrol maddesinin hiçbirinin seçili olmadığını** görün.
-4. Gerçekleşen tarih, zabit ve katılım alanlarını doldurun; 8 kontrolü **Simüle edildi** olarak işaretleyin.
-5. Eğitim sekmesindeki risk başlıklarını ayrıca değerlendirin. Onay kutusunu işaretleyin. Açık risk veya eksik madde olduğunda uyarının devam ettiğini görün.
-6. TXT ve JSON indirip JSON dosyasını geri yükleyin; girilen verilerin geri geldiğini kontrol edin.
-7. **22.11.2026** Gemiyi Terk talimini açın ve **12 kontrol maddesini** kontrol edin.
-8. Uygulamanın Türkçe/English geçişini ve mobil görünümünü sınayın.
+### Kaynakça (APA 7)
 
-## Gizlilik ve teknik sınırlar
+International Maritime Organization, & International Civil Aviation Organization. (2025). *IAMSAR Manual, Volume III – Mobile Facilities* (2025 ed.). International Maritime Organization. https://doi.org/10.62454/KL962E
 
-- Kamuya açık depoda tarihsel doldurulmuş formlar, personel adları veya kurum içi risk belgeleri bulunmaz.
-- Uygulama, veri girişlerini yalnızca **tarayıcı belleğinde** tutar ve uzak sunucuya göndermez.
-- JSON/TXT/PDF çıktıları **kullanıcının cihazında** oluşur. Cihazda saklanan dosyaların korunması kullanıcı ve kurumun sorumluluğundadır.
-- Veri girişleri sayfa yenilendiğinde kaybolabilir; yerel JSON taslak export/import işlevini kullanın. **Otomatik kalıcı kayıt, sürüm çatışma yönetimi, ERP aktarımı ve e-imza bulunmaz.**
-- Tamamlanmış gibi hazırlanmış metin **senaryo örneğidir**. Yetkili kişi doğrulamadan gerçek talim icrasının delili değildir.
-- HTML'de sınıflandırılan fiilî/simüle işlemler, resmi formdaki EVET/HAYIR seçeneklerine otomatik veya koşulsuz eşitlenmez.
-- NENE HATUN donanımının kamuya açık profil alanları halen **pilot** durumundadır; kurum içi doğrulamalar ve tam envanter bu açık sürüme otomatik aktarılmaz.
-- Çoklu posta, yeni katılan personel eğitim kontrolü, onaylı risk matrisi hesaplaması, özel prosedürün tam metin gösterimi ve doğrudan ISM formu doldurma **henüz yoktur**.
-
-## Geliştirici testleri
-
-```bash
-node tests/test-calendar.cjs
-node tests/test-training.cjs
-node tests/test-vessel-profiles.cjs
-```
-
-Ek olarak sürüm 1.5.0 hazırlığında Chromium üzerinde 201 yıllık takvim hesabı, farklı talim aileleri, 8/12 kontrol maddeleri, risk/eksik işlem uyarıları, TXT/JSON indir-yükle, A4 çıktı, TR/EN ve 390 px mobil görünüm etkileşimli olarak test edilmiştir. Firefox ve Safari için ayrıca test yapılmamıştır.
+Kıyı Emniyeti Genel Müdürlüğü. (t.y.). *Yıllık role talimleri ve periyodik kontroller* (EK-VI, Rev.015) [Kurum içi planlama çizelgesi].
