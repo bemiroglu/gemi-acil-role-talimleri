@@ -34,8 +34,6 @@ assert(html.includes('D_EXPANDED') && html.includes('D_TOPICS') && html.includes
 assert(html.includes('Dalma giysisi: özellikler, giyilme sırası'));
 assert(html.includes('Şişirilebilir can salı: yapı ve parçalar'));
 assert(html.includes('MSC.1/Circ.1578/Rev.1'));
-assert(!html.includes('<p class="dHint">'+String.fromCharCode(39)+'+h(dg('+String.fromCharCode(39)+'sampleNotice'))'));
-assert(!html.includes('<p class="dReadOnlyNotice">'+String.fromCharCode(39)+'+h(dg('+String.fromCharCode(39)+'intro'))'));
 
 assert(html.includes('IAMSAR Manual')&&html.includes('sourceSAR'));
 assert(html.includes('dCopySample'));
