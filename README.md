@@ -1,6 +1,6 @@
 # Gemi Acil Role Talimleri
 
-**Uygulama v1.6.0** · **Kanonik takvim politikası v1.2** · Türkçe / English · Tek HTML5 dosyası · Çevrimdışı çalışma
+**Uygulama v1.7.0** · **Kanonik takvim politikası v1.2** · Türkçe / English · Tek HTML5 dosyası · Çevrimdışı çalışma
 
 ## Uygulamayı açın
 
@@ -36,6 +36,27 @@ Bu açık kaynak proje, gemide yapılacak acil durum role talimlerinin **takvimd
 **Kaynak ve yayın sınırı:** Özgün kurum el kitapları, doldurulmuş formlar ve lisanslı IAMSAR tam metni kamuya açık HTML içine kopyalanmamıştır. Eğitim bilgileri özgün, yeniden yazılmış ve kaynaklandırılmış açıklamalardır. Üreticiye özgü bot/davit kilit ve işletme sırası, gemide geçerli onaylı teknik talimatla yürütülmelidir.
 
 **[Talim Eğitim Kaynakları (APA 7)](docs/EDUCATIONAL_SOURCES.md)**
+
+## v1.7.0 — Talim türüne göre özelleştirilmiş eğitici içerik
+
+**Talim Rehberi geniş zamanda anlatılır:** “görevler açıklanır”, “duman yayılımı değerlendirilir”, “uygun söndürücü tanıtılır”. **Rapor Yazım Rehberi** geçmiş zamanlı örnek uygulama anlatımını korur: “alarm verildi”, “personel toplandı”, “kontrol edildi”.
+
+Yangın talimi artık dört farklı eğitim içeriği açar:
+
+| Yangın senaryosu | Özel eğitim kapsamı |
+| --- | --- |
+| **Güverte / boyalık** | Yanıcı solvent/boya stokları, rüzgâr ve duman, komşu bölmeler, köpük/uygun ajan, yangın suyu–kirlilik ilişkisi |
+| **Yaşam mahalli** | Kabin/koridor ve çamaşırhane, personel yoklaması, tahliye, yangın kapıları, duman ve kaçış yolları |
+| **Makine dairesi** | Sıcak yüzey–yakıt sızıntısı, çabuk kapama, fan ve acil stop kararları, sabit CO₂, güç/seyir sürekliliği |
+| **Kuzine** | Kızgın yağ/fritöz, davlumbaz ve yağlı hava kanalları, ısı kaynağı, pişirme yağına uygun söndürücü, suyun kullanılmaması |
+
+Dört yangın senaryosunun her biri **sekiz özgün eğitim giriş metni, sekiz aşamalı özgül açıklama ve özgül teknik bilgi kartları** içerir. Ortak yangın organizasyonu, role ve kayıt konuları ayrıca korunur.
+
+**Deniz kirliliğinde** tank taşması/yakıt sızıntısı; **kapalı mahal kurtarmada** makine alt mahalli/tank/başaltı senaryoları da ayrı odaklarla gösterilir. Arama Kurtarma (IAMSAR 2025), Gemiyi Terk (SOLAS III/35, LSA) ve diğer talimlerin genel eğitim kapsamı devam eder.
+
+Tüm eğitim içeriği **özgün, genelleştirilmiş açıklamalar** şeklindedir. Kurumun özgün belgeleri, geçmiş doldurulmuş ISM formları ve ticari IAMSAR tam metni yayımlanmaz. Kullanıcıya elektronik form doldurtulmaz.
+
+**[Güncellenmiş kaynaklar ve APA 7 bibliyografya](docs/EDUCATIONAL_SOURCES.md)**
 
 ## Kapsam ve kaynak yaklaşımı
 
