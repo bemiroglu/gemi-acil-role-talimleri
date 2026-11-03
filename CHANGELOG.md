@@ -1,5 +1,17 @@
 # Değişiklik Kaydı / Changelog
 
+## 1.7.0 — 2026-11-03
+
+- **Talim Rehberi**, 12 talim ailesindeki eğitim safhası girişlerinde geçmiş zamandan geniş zamana dönüştürüldü; öğretici açıklamaların ayrıntı düzeyi korundu.
+- **Rapor Yazım Rehberi** geçmiş zamanlı, doldurulmuş gibi yazılmış örnek anlatım olarak korundu; yangın türüne özel açıklayıcı rapor cümleleri eklendi.
+- Yangın senaryoları **`*1 Güverte/Boyalık`**, **`*2 Yaşam Mahalli`**, **`*3 Makine Dairesi`**, **`*4 Kuzine`** olarak farklılaşan sekiz eğitim giriş cümlesi, her aşamaya özel bilgi ve ilave donanım/teknik eğitim kartlarıyla desteklendi.
+- Deniz kirliliğinin tank taşması/yakıt kaçağı; kapalı mahal kurtarmanın makine alt mahalli/tank/başaltı alt senaryoları ayrı odakla gösterildi.
+- Yangın için **SOLAS II-2/15**, acil dümen için **SOLAS V/26**, kapalı mahal için **IMO MSC.581(110)**, deniz kirliliği için **MARPOL Ek I/37** gibi talim türüne uygun kaynak sınıfları eklendi.
+- Genel ders metinleri ve kaynak başlıkları özgün biçimde yeniden yazıldı; kurum içi kaynakların tam metni, doldurulmuş formlar ve kişisel veriler GitHub'a aktarılmadı.
+- Çevrimiçi form yok; **takvim algoritması v1.2**, CSV/ICS, 12 aylık PDF ve Türkçe/İngilizce arayüz korunmuştur.
+- Chromium testlerinde 201 yıllık takvim, dört yangın, iki kirlilik, üç kapalı mahal alt senaryosu, tüm 12 talim ailesi, rapor yazımı ve mobil görünüm doğrulandı.
+
+
 ## 1.6.0 — 2026-11-03
 - Talim Rehberi'ndeki kısa adım açıklamaları, **12 talim türü için ayrıntılı ve özgün eğitim metinleriyle** genişletildi.
 - Gemiyi Terk: 8 safhada 29 açıklama; can yeleği, dalma giysisi, şişirilebilir can salı, sinyal/haberleşme donanımı ve denizde hayatta kalma üzerine 7 teknik ders notu eklendi.
