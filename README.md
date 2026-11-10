@@ -11,10 +11,10 @@ Uygulama **Türkçe ve İngilizce** kullanılabilir; NENE HATUN örnek profili i
 **Erişim ve indirme**
 
 - [**Güncel uygulamayı aç — v3.6.1**](https://bemiroglu.github.io/gemi-acil-role-talimleri/)
-- [**Güncel tek HTML dosyasını indir — v3.6.1**](https://raw.githubusercontent.com/bemiroglu/gemi-acil-role-talimleri/main/index.html)
-- [**Tam paket — HTML ve ayrı kaynak arşivi (ZIP)**](downloads/Gemi_Acil_Role_Talimleri_v3.6.1_Tam_Paket.zip)
+- [**Güncel tek HTML dosyasını indir — v3.6.1**](https://github.com/bemiroglu/gemi-acil-role-talimleri/raw/refs/heads/main/index.html)
+- [**Tam paket — HTML ve ayrı kaynak arşivi (ZIP)**](https://github.com/bemiroglu/gemi-acil-role-talimleri/raw/refs/heads/main/downloads/Gemi_Acil_Role_Talimleri_v3.6.1_Tam_Paket.zip)
 - [**Özgün v1.7.0 sürümünü aç**](https://bemiroglu.github.io/gemi-acil-role-talimleri/versions/v1.7.0/)
-- [**Özgün v1.7.0 HTML dosyasını indir**](versions/v1.7.0/index.html)
+- [**Özgün v1.7.0 HTML dosyasını indir**](https://github.com/bemiroglu/gemi-acil-role-talimleri/raw/refs/heads/main/versions/v1.7.0/index.html)
 
 ### Ekran görüntüleri
 
@@ -47,9 +47,9 @@ Use the application in **Turkish or English**, with a NENE HATUN example-vessel 
 **Open and download**
 
 - [**Open current application — v3.6.1**](https://bemiroglu.github.io/gemi-acil-role-talimleri/)
-- [**Download standalone HTML — v3.6.1**](https://raw.githubusercontent.com/bemiroglu/gemi-acil-role-talimleri/main/index.html)
-- [**Complete package — HTML and separate source archive (ZIP)**](downloads/Gemi_Acil_Role_Talimleri_v3.6.1_Tam_Paket.zip)
+- [**Download standalone HTML — v3.6.1**](https://github.com/bemiroglu/gemi-acil-role-talimleri/raw/refs/heads/main/index.html)
+- [**Complete package — HTML and separate source archive (ZIP)**](https://github.com/bemiroglu/gemi-acil-role-talimleri/raw/refs/heads/main/downloads/Gemi_Acil_Role_Talimleri_v3.6.1_Tam_Paket.zip)
 - [**Open original v1.7.0**](https://bemiroglu.github.io/gemi-acil-role-talimleri/versions/v1.7.0/)
-- [**Download original v1.7.0 HTML**](versions/v1.7.0/index.html)
+- [**Download original v1.7.0 HTML**](https://github.com/bemiroglu/gemi-acil-role-talimleri/raw/refs/heads/main/versions/v1.7.0/index.html)
 
 The screenshots above illustrate the monthly calendar, mobile agenda, drill guidance, and reporting guide.
