@@ -1,97 +1,55 @@
-# Gemi Acil Role Talimleri
+# Gemi Acil Role Talimleri | Shipboard Emergency Drills
 
-**Uygulama v1.7.0** · **Kanonik takvim politikası v1.2** · Türkçe / English · Tek HTML5 dosyası · Çevrimdışı çalışma
+## Türkçe
 
-## Uygulamayı açın
+**Gemi Acil Role Talimleri**, gemi zabitlerinin örnek role talim programını hızlıca inceleyebilmesi, talimleri hazırlayabilmesi ve ilgili teknik eğitim bilgilerine erişebilmesi için hazırlanmış iki dilli bir takvim ve rehber uygulamasıdır.
 
-**[Gemi Acil Role Talimleri — Çalışan Web Uygulaması](https://bemiroglu.github.io/gemi-acil-role-talimleri/)**
+Açılışta **aylık talim takvimi** görüntülenir. Bir tarih seçildiğinde o güne ait talimler, özetleri ve doğrudan rehber bağlantıları gösterilir. Her talimde sekiz aşamalı uygulama açıklamaları, teknik bilgi notları, **02 · Rapor Yazım Rehberi** ve yazdırılabilir brifing bulunur. Acil durum başvuru bölümü ve yıllık takvim de aynı arayüzden erişilebilir.
 
-Kaynak: [index.html](index.html) · [MIT lisansı](LICENSE) · [Geliştirme planı](ROADMAP.md)
+Uygulama **Türkçe ve İngilizce** kullanılabilir; NENE HATUN örnek profili ile genel gemi profili arasında seçim yapılabilir. Temel uygulama tek bir HTML dosyasıdır; kuruluma veya internet bağlantısına ihtiyaç duymaz.
 
-Bu açık kaynak proje, gemide yapılacak acil durum role talimlerinin **takvimde anlaşılır biçimde görüntülenmesini** ve zabitlerin bu talimlere **bilgi ve evrak yönünden hazırlanmasını** kolaylaştırır. KEGM'nin resmî/onaylı uygulaması veya geminin yürürlükteki SMS/ISM prosedürünün yerine geçmez.
+**Erişim ve indirme**
 
-## Nasıl kullanılır?
+- [**Güncel uygulamayı aç — v3.6.1**](https://bemiroglu.github.io/gemi-acil-role-talimleri/)
+- [**Güncel tek HTML dosyasını indir — v3.6.1**](https://raw.githubusercontent.com/bemiroglu/gemi-acil-role-talimleri/main/index.html)
+- [**Tam paket — HTML ve ayrı kaynak arşivi (ZIP)**](downloads/Gemi_Acil_Role_Talimleri_v3.6.1_Tam_Paket.zip)
+- [**Özgün v1.7.0 sürümünü aç**](https://bemiroglu.github.io/gemi-acil-role-talimleri/versions/v1.7.0/)
+- [**Özgün v1.7.0 HTML dosyasını indir**](versions/v1.7.0/index.html)
 
-1. Açılışta **NENE HATUN (pilot)** veya **Kurum genel planı** görünümünü seçin.
-2. Takvimden tarih veya ilgili pazar gününü seçin.
-3. Talim kartında **Talim Rehberi** düğmesini açın. Amaç, eğitim konuları, olay sırası, ilgili prosedür/kaynak başlıkları, riskler ve emniyet hatırlatmaları görünür.
-4. **Rapor Yazım Rehberi** düğmesini açın. Geçmiş zamanla yazılmış **örnek talim anlatımı**, hazırlanacak/başvurulacak evraklar, EK-V kontrol konuları ve raporda unutulmaması gereken bilgiler görünür. Örnek metin tek tıklamayla kopyalanabilir.
-5. Gerçek talimi kurumun geçerli usullerine göre icra edin; **EK-V ve diğer resmî formları mevcut kâğıt/KEGM ERP ISM sisteminde doldurmaya devam edin**.
-6. İsterseniz takvimde **12 Aylık PDF**, **takvim yılı CSV** ve **ICS** çıktılarını kullanın.
+### Ekran görüntüleri
 
-**Yeni sürümde ek web formu yoktur.** Web üzerinde risk değerlendirmesi doldurulmaz, kontrol maddeleri işaretlenmez, personel girilmez, tutanak hazırlanıp onaylanmaz. Bu işler, sonraki ve ayrı bir geliştirme aşamasına bırakılmıştır.
+**Aylık takvim ve seçilen haftanın talimleri**
 
-**English:** Select a vessel/date; open **Drill Guide** for training, hazards and precautions, or **Reporting Guide** for a past-tense example and documentation reminders. Neither page asks you to fill in an online form.
+![Aylık takvim ve ayrıntılı talim kartları](assets/01-takvim-masaustu.png)
 
-## v1.6.0 — Ayrıntılı eğitim içeriği
+**Mobil takvim**
 
-**01 · Talim Rehberi** artık sadece kısa hatırlatıcı başlıklardan oluşmaz. Kurumun mevcut eğitim ve prosedür dokümanlarında yer alan **eğitim konu başlıkları**, SOLAS III/19 ve III/35, LSA Code, IMO ve erişilebilir eğitim kaynaklarından oluşturulan **özgün ve ayrıntılı açıklamalarla** desteklenmiştir.
+![Mobil cihazda pazar ajandası](assets/02-takvim-mobil.png)
 
-- **Gemiyi Terk:** 8 ana safhada 29 ayrıntılı açıklama; can yeleği giyme, dalma giysisi seçimi ve giyilmesi, şişirilebilir can salının yapısı ve biniş, GMDSS/EPIRB/SART, hayatta kalma, hipotermi ve kötü hava üzerine 7 ek teknik eğitim konusu.
-- **Yangın:** 8 ana safha, 19 açıklama; yangın türü, söndürücü seçimi, koruyucu donanım, solunum cihazı/EEBD farkı ve sabit söndürme sistemi konuları.
-- **Kurtarma/hizmet botu, MOB, SAR, acil dümen, kapalı mahal, kirlilik, karaya oturma, su alma, acil kalkış ve can filikası:** Talim türünün kendi tehlikeleri ve eğitim safhalarıyla genişletilmiş anlatımlar.
-- Eğitim başlıkları **ek tıklama gerekmeksizin açık görünür**; üstte kısa içerik dizini, altta ilgili kamuya açık kaynak bağlantıları vardır.
-- İkinci sayfada geçmiş zamanlı örnek anlatım ve evrak hatırlatıcıları **değişmeden korunur**. İki ekrandaki gereksiz tekrar uyarıları kaldırılmıştır; yeni elektronik form eklenmemiştir.
+**Talim Rehberi**
 
-**Kaynak ve yayın sınırı:** Özgün kurum el kitapları, doldurulmuş formlar ve lisanslı IAMSAR tam metni kamuya açık HTML içine kopyalanmamıştır. Eğitim bilgileri özgün, yeniden yazılmış ve kaynaklandırılmış açıklamalardır. Üreticiye özgü bot/davit kilit ve işletme sırası, gemide geçerli onaylı teknik talimatla yürütülmelidir.
+![Sekiz aşamalı talim rehberi](assets/03-talim-rehberi.png)
 
-**[Talim Eğitim Kaynakları (APA 7)](docs/EDUCATIONAL_SOURCES.md)**
+**Rapor Yazım Rehberi**
 
-## v1.7.0 — Talim türüne göre özelleştirilmiş eğitici içerik
+![Geçmiş zamanlı rapor örneği ve rapor hazırlama başlıkları](assets/04-rapor-rehberi.png)
 
-**Talim Rehberi geniş zamanda anlatılır:** “görevler açıklanır”, “duman yayılımı değerlendirilir”, “uygun söndürücü tanıtılır”. **Rapor Yazım Rehberi** geçmiş zamanlı örnek uygulama anlatımını korur: “alarm verildi”, “personel toplandı”, “kontrol edildi”.
+---
 
-Yangın talimi artık dört farklı eğitim içeriği açar:
+## English
 
-| Yangın senaryosu | Özel eğitim kapsamı |
-| --- | --- |
-| **Güverte / boyalık** | Yanıcı solvent/boya stokları, rüzgâr ve duman, komşu bölmeler, köpük/uygun ajan, yangın suyu–kirlilik ilişkisi |
-| **Yaşam mahalli** | Kabin/koridor ve çamaşırhane, personel yoklaması, tahliye, yangın kapıları, duman ve kaçış yolları |
-| **Makine dairesi** | Sıcak yüzey–yakıt sızıntısı, çabuk kapama, fan ve acil stop kararları, sabit CO₂, güç/seyir sürekliliği |
-| **Kuzine** | Kızgın yağ/fritöz, davlumbaz ve yağlı hava kanalları, ısı kaynağı, pişirme yağına uygun söndürücü, suyun kullanılmaması |
+**Shipboard Emergency Drills** is a bilingual calendar and technical guide designed to help deck and engineering officers review example drill schedules, prepare exercises, and locate relevant emergency training guidance quickly.
 
-Dört yangın senaryosunun her biri **sekiz özgün eğitim giriş metni, sekiz aşamalı özgül açıklama ve özgül teknik bilgi kartları** içerir. Ortak yangın organizasyonu, role ve kayıt konuları ayrıca korunur.
+The app opens with a **monthly drill calendar**. Select a date to see the planned drills, short descriptions, and direct links to their guidance. Each drill includes eight structured training stages, technical learning notes, a **Reporting Guide** with example past-tense narrative, and a printable briefing. An emergency reference library and annual calendar are also available.
 
-**Deniz kirliliğinde** tank taşması/yakıt sızıntısı; **kapalı mahal kurtarmada** makine alt mahalli/tank/başaltı senaryoları da ayrı odaklarla gösterilir. Arama Kurtarma (IAMSAR 2025), Gemiyi Terk (SOLAS III/35, LSA) ve diğer talimlerin genel eğitim kapsamı devam eder.
+Use the application in **Turkish or English**, with a NENE HATUN example-vessel profile or a generic-vessel profile. The core app is a single standalone HTML file that works offline without installation.
 
-Tüm eğitim içeriği **özgün, genelleştirilmiş açıklamalar** şeklindedir. Kurumun özgün belgeleri, geçmiş doldurulmuş ISM formları ve ticari IAMSAR tam metni yayımlanmaz. Kullanıcıya elektronik form doldurtulmaz.
+**Open and download**
 
-**[Güncellenmiş kaynaklar ve APA 7 bibliyografya](docs/EDUCATIONAL_SOURCES.md)**
+- [**Open current application — v3.6.1**](https://bemiroglu.github.io/gemi-acil-role-talimleri/)
+- [**Download standalone HTML — v3.6.1**](https://raw.githubusercontent.com/bemiroglu/gemi-acil-role-talimleri/main/index.html)
+- [**Complete package — HTML and separate source archive (ZIP)**](downloads/Gemi_Acil_Role_Talimleri_v3.6.1_Tam_Paket.zip)
+- [**Open original v1.7.0**](https://bemiroglu.github.io/gemi-acil-role-talimleri/versions/v1.7.0/)
+- [**Download original v1.7.0 HTML**](versions/v1.7.0/index.html)
 
-## Kapsam ve kaynak yaklaşımı
-
-- Yangın talimleri **Güverte Yangını, Yaşam Mahalli Yangını, Makine Dairesi Yangını, Kuzine Yangını** gibi açıklayıcı adlarla gösterilir.
-- Yıllık plan, kurum içi EK-VI Rev.015 çizelgesinden türetilmiş **proje planlama politikası v1.2** ile oluşturulur. Beşinci pazar çift talim kuralı proje içi planlama tercihidir; kendiliğinden mevzuat zorunluluğu olduğu iddia edilmez.
-- **Arama Kurtarma** bilgi ekranı, IAMSAR Manual Volume III *Mobile Facilities* (2025) için doğrulanmış **bölüm ve eğitim konu başlıklarına** referans verir. El kitabının ücretli veya kurumca lisanslı tam metni içerilmez.
-- Talim rehberi, kurumun güncel prosedürleri ve gemiye özgü ekipman talimatlarının yerine geçmez. Riskler **hatırlatıcı başlıklar** olarak verilir; geçmiş risk puanları onaylı sonuç gibi kullanılmaz.
-- Geçmiş zamanlı örnekler, **gerçekleşmiş yeni talim kaydı değildir**. Gerçekte uygulanmayan bir işlem resmî kayda yapılmış gibi yazılmamalıdır.
-- Kamuya açık NENE HATUN profili pilot/koşullu modeldir; kurum içi sertifika, kişisel bilgiler ve özgün el kitapları bu depoya kopyalanmamıştır.
-- Sürüm 1.5.1'de çoklu gemi profili şablonları vardır; yeni JSON profilinin doğrudan HTML'ye otomatik eklenmesi henüz desteklenmez.
-
-## Denetimler
-
-```bash
-node tests/test-calendar.cjs
-node tests/test-training.cjs
-node tests/test-vessel-profiles.cjs
-```
-
-Takvim için 1900–2100 regresyonu; eğitim ve rapor sayfaları için işlev, görünürlük ve **çevrimiçi form bulunmaması** kontrolleri yapılır. Tek HTML, harici kütüphane veya uzak veri aktarımı gerektirmez.
-
-## Belgeler ve geliştirme
-
-- [Değişiklik geçmişi](CHANGELOG.md)
-- [Talim Rehberi ve Rapor Yazım Rehberi](docs/TRAINING_RECORDS.md)
-- [Gemi bazlı mimari](docs/ARCHITECTURE.md)
-- [Yeni gemi ekleme rehberi](docs/VESSEL_ONBOARDING.md)
-- [Geliştirme yol haritası](ROADMAP.md)
-
-**Geliştirici:** Bilal Emiroğlu — TA1BU
-
-**Telif:** © 2026 Bilal Emiroğlu. Özgün yazılım ve özgün proje belgeleri [MIT License](LICENSE) ile yayımlanır; üçüncü taraf yayınların ve kurum içi belgelerin lisansları ayrıca geçerlidir.
-
-### Kaynaklar (APA 7)
-
-International Maritime Organization, & International Civil Aviation Organization. (2025). *International Aeronautical and Maritime Search and Rescue Manual, Volume III: Mobile Facilities* (2025 ed.). International Maritime Organization. https://doi.org/10.62454/KL962E
-
-Kıyı Emniyeti Genel Müdürlüğü. (t.y.). *Yıllık role talimleri ve periyodik kontroller* (EK-VI, Rev.015) [Kurum içi planlama çizelgesi; kamuya açık depoya eklenmemiştir].
+The screenshots above illustrate the monthly calendar, mobile agenda, drill guidance, and reporting guide.
